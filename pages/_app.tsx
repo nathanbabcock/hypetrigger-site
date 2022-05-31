@@ -2,6 +2,7 @@ import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { GA_TRACKING_ID } from '../src/config'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,24 +24,26 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/logo.svg" type="image/svg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `,
-          }}
-        />
       </Head>
+
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      {/* eslint-disable-next-line @next/next/next-script-for-ga */}
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script
+        id="ga-script"
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}');
+          `,
+        }}
+      />
+
       <Component {...pageProps} />
     </>
   )
