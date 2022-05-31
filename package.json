@@ -1,5 +1,5 @@
 {
-  "name": "hypetrigger-site-next",
+  "name": "hypetrigger-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "sass": "^1.52.1",
     "typescript": "4.7.2"
   }
 }
