@@ -1,11 +1,8 @@
-import '../styles/globals.scss'
-import styles from '../styles/App.module.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { GA_TRACKING_ID } from '../src/config'
 import Script from 'next/script'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { GA_TRACKING_ID } from '../src/config'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

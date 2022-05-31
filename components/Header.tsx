@@ -1,9 +1,11 @@
-import styles from '../styles/Header.module.scss'
+import clsx from 'clsx'
+import type { ComponentProps } from 'react'
 import packageJSON from '../../hypetrigger/package.json'
+import styles from '../styles/Header.module.scss'
 
-export default function Header() {
+export default function Header(props: ComponentProps<'header'>) {
   return (
-    <header className={styles.header}>
+    <header {...props} className={clsx(styles.header, props.className)}>
       <a href="https://hypetrigger.io" className={styles.homeLink}>
         <img
           className={styles.logo}

@@ -8,6 +8,15 @@
   list-style-type: none;
   display: flex;
   gap: var(--md);
+
+  a {
+    color: inherit;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .homeLink {
@@ -35,10 +44,11 @@
   margin-top: 5px;
   display: flex;
   // background-color: var(--blue);
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  // border: 2px solid var(--blue);
+  border: 2px solid currentColor;
+  // color: var(--blue);
   // color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding: 3px var(--sm);
   border-radius: var(--capsule);
 }

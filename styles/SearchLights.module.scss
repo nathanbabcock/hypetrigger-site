@@ -1,0 +1,88 @@
+@keyframes searchlight {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes searchlight-narrow {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes backlight {
+  from {
+    transform: scaleX(0.85);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.searchlights {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+}
+
+.backlight {
+  animation-name: backlight;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 947px 910px;
+}
+
+.searchlightMed1 {
+  transform-origin: 781px 1084px;
+  animation-name: searchlight;
+  animation-duration: 12s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.searchlightMed2 {
+  transform-origin: 1139px 1084px;
+  animation-name: searchlight;
+  animation-duration: 12s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.searchlightThin1 {
+  transform-origin: 781px 1084px;
+  animation-name: searchlight-narrow;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.searchlightThin2 {
+  transform-origin: 960px 1084px;
+  animation-name: searchlight-narrow;
+  animation-duration: 8s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.searchlightThin3 {
+  transform-origin: 1139px 1084px;
+  animation-name: searchlight-narrow;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
