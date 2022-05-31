@@ -1,8 +1,22 @@
-.screenshot {
-  max-width: 100%;
-}
-
 .header,
 .main {
   color: white;
+  text-align: center;
+}
+
+.topText {
+  margin: var(--lg) 0;
+
+  h1,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.screenshot {
+  max-width: 100%;
+  max-height: 50vh;
+  border-radius: var(--xs);
+  box-shadow: var(--drop-shadow);
 }

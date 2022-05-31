@@ -14,11 +14,13 @@ const Home: NextPage = () => {
         <div className={styles.container}>
           {/* TODO banner image somehow... */}
           <main className={styles.main}>
-            <h1>Automatic highlight clips</h1>
-            <p>
-              Clipping used to be as easy as pressing a button.{' '}
-              <strong>Now it's even easier.</strong>
-            </p>
+            <div className={styles.topText}>
+              <h1>Automatic highlight clips</h1>
+              <p>
+                Clipping used to be as easy as pressing a button.{' '}
+                <strong>Now it's even easier.</strong>
+              </p>
+            </div>
             <a href="/screenshots/hypetrigger-0.10.0.png" target="blank">
               <img
                 className={styles.screenshot}
@@ -59,9 +61,8 @@ const Home: NextPage = () => {
             <button>Send</button>
           </section>
         </div>
-
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
