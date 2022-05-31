@@ -5,11 +5,15 @@ export default function Footer() {
   return (
     <div>
       <span>
-        Copyright &copy; {year}{' '}
-        <a href="" target="blank">
-          Nathan Babcock
+        Copyright &copy; {year} Nathan Babcock (
+        <a href="https://www.linkedin.com/in/nathan-babcock/" target="blank">
+          LinkedIn
         </a>
-        . All rights reserved.
+        {' / '}
+        <a href="https://github.com/nathanbabcock" target="blank">
+          Github
+        </a>
+        )
       </span>
       <ul>
         <li>Terms and conditions</li>
