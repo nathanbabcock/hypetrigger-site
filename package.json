@@ -2,6 +2,10 @@
   "name": "hypetrigger-site",
   "version": "0.1.0",
   "private": true,
+  "author": "Nathan Babcock",
+  "homepage": "https://hypetrigger.io",
+  "license": "UNLICENSED",
+  "repository": "github:nathanbabcock/hypetrigger-site",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
