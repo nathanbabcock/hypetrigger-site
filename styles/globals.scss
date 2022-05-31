@@ -1,3 +1,19 @@
+// @import '../../hypetrigger/src/styles/buttons.scss';
+@import './buttons.scss';
+
+:root {
+  --blue: cornflowerblue;
+  --green: limegreen;
+
+  --xl: 80px;
+  --lg: 40px;
+  --md: 20px;
+  --sm: 10px;
+  --xs: 5px;
+
+  --capsule: 9999px;
+}
+
 html,
 body {
   padding: 0;

@@ -1,8 +1,11 @@
 import '../styles/globals.scss'
+import styles from '../styles/App.module.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { GA_TRACKING_ID } from '../src/config'
 import Script from 'next/script'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -44,7 +47,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
 
-      <Component {...pageProps} />
+      <div className={styles.wrapper}>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   )
 }

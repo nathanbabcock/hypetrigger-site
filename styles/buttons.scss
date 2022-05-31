@@ -1,0 +1,20 @@
+.btn-lg {
+  border-radius: var(--capsule);
+  background-color: var(--green);
+  color: white;
+  padding: var(--sm) var(--md);
+
+  &:disabled {
+    opacity: 0.45;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
