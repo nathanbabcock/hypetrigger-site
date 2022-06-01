@@ -63,13 +63,16 @@ export async function getGameInfo(config: Config): Promise<IGDBGameInfo | undefi
   if (cached) return cached
 
   const token = await getAccessToken()
-  const searchName = config.title.replace(/\(.*?\)/g, '')
-  const fresh = await fetchGameInfo(searchName, token)
+
+  const fresh = await fetchGameInfo(config, token)
   if (fresh) writeCache(path, fresh)
+  else console.error(`[igdb] Empty response returned for ${config.title}`)
   return fresh
 }
 
-export async function fetchGameInfo(name: string, token: TwitchBearerToken): Promise<IGDBGameInfo | undefined> {
+export async function fetchGameInfo(config: Config, token: TwitchBearerToken): Promise<IGDBGameInfo | undefined> {
+  const searchName = config.title.replace(/\(.*?\)/g, '').trim()
+
   const result = await fetch('https://api.igdb.com/v4/games/', {
     method: 'POST',
     headers: {
@@ -87,7 +90,7 @@ export async function fetchGameInfo(name: string, token: TwitchBearerToken): Pro
         cover.width,
         cover.height;
       limit 1;
-      search "${name}";
+      where ${config.igdbGameId ? `id = ${config.igdbGameId};` : `name ~ "${searchName}";`}
     `,
   })
   const json = await result.json()
