@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import { GA_TRACKING_ID } from '../src/config'
+import { GA_TRACKING_ID } from '../env'
 import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,5 +1,5 @@
-import type { InferGetStaticPropsType, NextPageContext } from 'next'
-import getConfigs from '../src/get-configs'
+import type { InferGetStaticPropsType } from 'next'
+import { getConfigs } from '../data/game-configs'
 
 export const getStaticProps = async () => ({
   props: {

@@ -1,11 +1,13 @@
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { useRouter } from 'next/router'
-import getConfig from '../../src/get-config'
-import getConfigs from '../../src/get-configs'
+import { useEffect } from 'react'
+import { getConfig, getConfigs } from '../../data/game-configs'
+import { getAccessToken } from '../../data/igdb'
 
 export const getStaticProps = async (context: GetStaticPropsContext) => ({
   props: {
     config: getConfig(context.params!.game as string),
+    gameInfo: await getAccessToken(), //fetchGameInfo(context.params!.game as string),
   },
 })
 
@@ -18,9 +20,10 @@ export async function getStaticPaths() {
 }
 
 export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
-export default function GamePage({ config }: InferredProps) {
+export default function GamePage({ config, gameInfo }: InferredProps) {
   const router = useRouter()
   const { gameId: game } = router.query
+  useEffect(() => console.log({ gameInfo }))
 
   return (
     <>
