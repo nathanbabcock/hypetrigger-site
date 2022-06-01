@@ -23,15 +23,17 @@ export async function getStaticPaths() {
 
 export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
 export default function GamePage({ config, gameInfo }: InferredProps) {
-  const router = useRouter()
-  const { gameId: game } = router.query
+  const year =
+    gameInfo && new Date(gameInfo.first_release_date * 1000).getFullYear()
 
   return (
     <>
-      <h1>Game: {game}</h1>
-      <p>Blah blah blah</p>
-
       <img src={getCoverImg(gameInfo?.cover.image_id)} alt={config.title} />
+      <h1>
+        {config.title} {gameInfo && `(${year})`}{' '}
+      </h1>
+      <div>{config.triggers.length} triggers</div>
+      <p>Blah blah blah</p>
 
       <pre>
         <code>{JSON.stringify(gameInfo, null, 2)}</code>
