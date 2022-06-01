@@ -1,12 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'fs'
 import { dirname } from 'path'
-
-export type JSONValue =
-  | string
-  | number
-  | boolean
-  | { [x: string]: JSONValue }
-  | Array<JSONValue>
+import type { JSONValue } from '../types'
 
 export function writeCache(path: string, data: JSONValue) {
   mkdirSync(dirname(path), { recursive: true })

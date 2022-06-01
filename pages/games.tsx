@@ -1,10 +1,10 @@
 import type { InferGetStaticPropsType } from 'next'
-import { getConfigs } from '../data/game-configs'
+import { getConfigIds } from '../fetch/game-configs'
 
 export const getStaticProps = async () => ({
   props: {
     message: 'Hello World',
-    games: getConfigs(),
+    games: getConfigIds(),
   },
 })
 
