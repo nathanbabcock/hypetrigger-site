@@ -1,0 +1,16 @@
+@mixin hover {
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transition: none;
+    transform: scale(0.95);
+  }
+}
+
+.hover {
+  @include hover;
+}

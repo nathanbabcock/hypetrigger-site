@@ -1,3 +1,5 @@
+@import 'hover';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +38,8 @@
 }
 
 .homeLink {
+  @include hover;
+
   display: flex;
   align-items: center;
   gap: var(--sm);

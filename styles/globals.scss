@@ -1,7 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap';
-@import './buttons.scss';
-@import './cover-img.scss';
-@import './screenshot.scss';
+@import 'buttons';
+@import 'cover-img';
+@import 'screenshot';
+@import 'hover';
 
 :root {
   --blue: cornflowerblue;
