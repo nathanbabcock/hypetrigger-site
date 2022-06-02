@@ -7,7 +7,9 @@
 }
 
 .img {
+  min-height: 500px;
   width: 100%;
+  object-fit: cover;
 }
 
 .gradient {
@@ -15,7 +17,7 @@
   inset: 0;
   background: linear-gradient(
     rgba(0 0 0 / 100%) 0%,
-    rgba(0 0 0 / 0) 50%,
+    rgba(0 0 0 / 0%) 50%,
     rgba(0 0 0 / 100%) 100%
   );
 }
