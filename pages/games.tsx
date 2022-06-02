@@ -32,66 +32,74 @@ export const getStaticProps = async () => {
 export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
 export default function GamePage({ games }: InferredProps) {
   return (
-    <div className="wrapper">
-      <Header />
-      <div className={styles.gamesWrapper}>
-        <h1>Supported Games</h1>
-        <p>
-          Optimized configs for all of these games come with Hypetrigger by
-          default.
-        </p>
-        <p>
-          If your game isn't supported,{' '}
-          <a href={DISCORD_INVITE} target="blank">
-            request it on Discord
-          </a>
-          . Check out the JSON config files for each of this games in the{' '}
-          <a
-            href="https://github.com/nathanbabcock/hypetrigger-configs"
-            target="blank"
-          >
-            <code>hypetrigger-configs</code> repo on Github
-          </a>
-          .
-        </p>
-
-        <input type="text" className={styles.search} placeholder="Search..." />
-        <div className={styles.games}>
-          {games.map(game => (
-            <a
-              href={`/games/${game.config?.id}`}
-              className={styles.game}
-              key={game.config.id}
-            >
-              <img
-                className={styles.cover}
-                src={getCoverImg(game.gameInfo?.cover.image_id)}
-                alt=""
-              />
-              <div className={styles.gameRight}>
-                <strong className={styles.gameName}>{game.config.title}</strong>
-                <span className={styles.gameTriggers}>
-                  {game.config.triggers?.length ?? 0} trigger
-                  {game.config.triggers?.length !== 1 ? 's' : ''}
-                </span>
-                {(game.config.triggers?.length ?? 0) > 0 && (
-                  <ul className={styles.triggerList}>
-                    {game.config.triggers.slice(0, 3).map(trigger => (
-                      <li key={trigger.id}>{trigger.title}</li>
-                    ))}
-                    {game.config.triggers.length > 3 && (
-                      <li className={styles.more}>
-                        + {game.config.triggers.length - 3} more triggers...
-                      </li>
-                    )}
-                  </ul>
-                )}
-              </div>
+    <>
+      <div className="wrapper">
+        <Header />
+        <div className={styles.gamesWrapper}>
+          <h1>Supported Games</h1>
+          <p>
+            Optimized configs for all of these games come with Hypetrigger by
+            default.
+          </p>
+          <p>
+            If your game isn't supported,{' '}
+            <a href={DISCORD_INVITE} target="blank">
+              request it on Discord
             </a>
-          ))}
+            . Check out the JSON config files for each of this games in the{' '}
+            <a
+              href="https://github.com/nathanbabcock/hypetrigger-configs"
+              target="blank"
+            >
+              <code>hypetrigger-configs</code> repo on Github
+            </a>
+            .
+          </p>
+
+          <input
+            type="text"
+            className={styles.search}
+            placeholder="Search..."
+          />
+          <div className={styles.games}>
+            {games.map(game => (
+              <a
+                href={`/games/${game.config?.id}`}
+                className={styles.game}
+                key={game.config.id}
+              >
+                <img
+                  className={styles.cover}
+                  src={getCoverImg(game.gameInfo?.cover.image_id)}
+                  alt=""
+                />
+                <div className={styles.gameRight}>
+                  <strong className={styles.gameName}>
+                    {game.config.title}
+                  </strong>
+                  <span className={styles.gameTriggers}>
+                    {game.config.triggers?.length ?? 0} trigger
+                    {game.config.triggers?.length !== 1 ? 's' : ''}
+                  </span>
+                  {(game.config.triggers?.length ?? 0) > 0 && (
+                    <ul className={styles.triggerList}>
+                      {game.config.triggers.slice(0, 3).map(trigger => (
+                        <li key={trigger.id}>{trigger.title}</li>
+                      ))}
+                      {game.config.triggers.length > 3 && (
+                        <li className={styles.more}>
+                          + {game.config.triggers.length - 3} more triggers...
+                        </li>
+                      )}
+                    </ul>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
