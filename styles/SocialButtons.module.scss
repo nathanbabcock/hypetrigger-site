@@ -1,5 +1,6 @@
 .socialButtons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: var(--md);
   gap: var(--md);
@@ -103,6 +104,12 @@
   transition: bottom 0.3s ease-in-out;
 
   .techcrunchWrapper:hover & {
+    bottom: -15px;
+  }
+}
+
+@media (hover: none) {
+  .mirror {
     bottom: -15px;
   }
 }

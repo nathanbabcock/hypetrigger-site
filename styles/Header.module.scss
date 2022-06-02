@@ -4,10 +4,26 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sm);
+  }
+
+  .nav ul {
+    gap: var(--xs);
+    font-size: 12px;
+  }
+}
+
 .nav ul {
   list-style-type: none;
   display: flex;
   gap: var(--md);
+  margin: 0;
+  padding: 0;
 
   a {
     color: inherit;
