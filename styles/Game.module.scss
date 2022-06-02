@@ -1,0 +1,13 @@
+@import 'hover';
+
+.gameInfo {
+  display: flex;
+  // align-items: flex-end;
+  margin-top: 250px;
+  gap: var(--md);
+}
+
+.coverImg {
+  @include hover;
+  box-shadow: var(--drop-shadow);
+}

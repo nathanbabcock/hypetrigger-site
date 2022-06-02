@@ -1,0 +1,21 @@
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 500px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0 0 0 / 100%) 0%,
+    rgba(0 0 0 / 0) 50%,
+    rgba(0 0 0 / 100%) 100%
+  );
+}

@@ -71,10 +71,14 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="javascript: alert('Coming soon!')">Youtube</a>
+              <a href="#" onClick={() => alert('Coming soon!')}>
+                Youtube
+              </a>
             </li>
             <li>
-              <a href="javascript: alert('Coming soon!')">Twitch</a>
+              <a href="#" onClick={() => alert('Coming soon!')}>
+                Twitch
+              </a>
             </li>
           </ul>
         </div>
