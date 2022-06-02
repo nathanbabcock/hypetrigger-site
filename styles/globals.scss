@@ -41,7 +41,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 * {
@@ -56,4 +56,11 @@ input[type='text'] {
   padding: var(--xs) var(--md);
   color: inherit;
   font-size: inherit;
+}
+
+code {
+  font-family: monospace;
+  background-color: var(--hover-light);
+  padding: 5px;
+  border-radius: 2px;
 }

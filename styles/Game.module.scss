@@ -13,3 +13,95 @@
   max-width: 45vw;
   object-fit: cover;
 }
+
+.howTo ul {
+  font-size: 20px;
+}
+
+.findClips {
+  background: var(--green);
+  border-radius: var(--capsule);
+  padding: 1px 10px;
+}
+
+.triggers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  align-items: flex-start;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--md);
+  padding: var(--md);
+  border-radius: var(--md);
+  background-color: var(--hover-light);
+
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.triggerHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.triggerTitle {
+  text-transform: capitalize;
+}
+
+.triggerId {
+  margin-top: -30px;
+  height: 20px;
+  background: var(--blue);
+  border-radius: var(--capsule);
+  padding: var(--xs) var(--sm);
+  font-size: 12px;
+  font-weight: normal;
+  font-family: monospace;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.triggerDiagram {
+  width: 240px;
+  height: 135px;
+  background: var(--hover-light);
+  position: relative;
+  border: 1px solid white;
+
+  .cropRegion {
+    position: absolute;
+    opacity: 25%;
+    background: rgba(50, 205, 50, 50%);
+    border: 1px solid var(--green);
+  }
+}
+
+.triggerRight strong {
+  opacity: 0.75;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  width: 45px;
+}
+
+.triggerRight p {
+  border-left: 1px solid var(--hover-light);
+  padding-left: var(--sm);
+  margin-left: var(--sm);
+}
+
+.swatch {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 var(--xs);
+  width: 12px;
+  height: 12px;
+}

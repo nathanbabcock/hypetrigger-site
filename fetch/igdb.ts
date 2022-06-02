@@ -2,6 +2,7 @@ import { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET } from '../env'
 import { readCache, writeCache } from './cache'
 import { getConfigIds } from './game-configs'
 import type { Config } from 'hypetrigger/src/configs'
+import cleanConfigTitle from '../util/cleanConfigTitle'
 
 export const IGDB_CACHE_DIR = 'cache/igdb'
 
@@ -71,7 +72,7 @@ export async function getGameInfo(config: Config): Promise<IGDBGameInfo | undefi
 }
 
 export async function fetchGameInfo(config: Config, token: TwitchBearerToken): Promise<IGDBGameInfo | undefined> {
-  const searchName = config.title.replace(/\(.*?\)/g, '').trim()
+  const searchName = cleanConfigTitle(config.title)
 
   const result = await fetch('https://api.igdb.com/v4/games/', {
     method: 'POST',

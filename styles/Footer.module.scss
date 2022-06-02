@@ -2,6 +2,10 @@
   margin-top: var(--xl);
   background: black;
   padding-bottom: var(--xl);
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .wrapper {
