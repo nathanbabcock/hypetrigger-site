@@ -1,18 +1,55 @@
-import type { NextPage } from 'next'
+import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SearchLights from '../components/SearchLights'
+import { getConfig, getConfigIds } from '../fetch/game-configs'
+import { getGameInfo } from '../fetch/igdb'
+import { getCoverImg } from '../fetch/igdb-img'
 import styles from '../styles/Home.module.scss'
+import shuffle from '../util/shuffle'
 
-const Home: NextPage = () => {
+export type FeaturedGame = {
+  name: string
+  id: string
+  url: string
+}
+
+export const NUM_FEATURED_GAMES = 9
+export const getStaticProps = async () => {
+  const configIds = getConfigIds()
+  shuffle(configIds)
+  const featuredGames: FeaturedGame[] = []
+  let i = 0
+  for (const id of configIds) {
+    if (i++ >= NUM_FEATURED_GAMES) break
+    const config = getConfig(id)
+    const gameInfo = await getGameInfo(config)
+
+    if (!gameInfo || featuredGames.find(game => game.name === gameInfo.name)) {
+      --i
+      continue
+    }
+
+    featuredGames.push({
+      name: gameInfo.name,
+      url: getCoverImg(gameInfo.cover.image_id),
+      id,
+    })
+  }
+
+  return {
+    props: { featuredGames },
+  }
+}
+
+type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
+export default function Home(props: InferredProps) {
   return (
     <>
       <SearchLights />
       <div className="wrapper">
         <Header className={styles.header} />
-
         <div className={styles.container}>
-          {/* TODO banner image somehow... */}
           <main className={styles.main}>
             <div className={styles.topText}>
               <h1>Automatic highlight clips</h1>
@@ -21,10 +58,10 @@ const Home: NextPage = () => {
                 <strong>Now it's even easier.</strong>
               </p>
             </div>
-            <a href="/screenshots/hypetrigger-0.10.0.png" target="blank">
+            <a href="/screenshots/0.10.0.png" target="blank">
               <img
                 className={styles.screenshot}
-                src="/screenshots/hypetrigger-0.10.0.png"
+                src="/screenshots/0.10.0.png"
                 alt="Screenshot of Hypetrigger v0.10.0"
               />
             </a>
@@ -34,9 +71,7 @@ const Home: NextPage = () => {
             </h2>
             {/* social buttons */}
           </main>
-          <section>
-            <h2>Support for most popular games</h2>
-          </section>
+          <GamesSection {...props} />
           <section>
             <h2>Intuitive UI, powerful AI</h2>
             <ol>
@@ -67,4 +102,18 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+function GamesSection({ featuredGames }: InferredProps) {
+  return (
+    <section>
+      <h2>Support for most popular games</h2>
+      <div className={styles.featuredGames}>
+        {featuredGames.map(({ name, url, id }) => (
+          <a href={`/games/${id}`} key={id} title={name}>
+            <img src={url} alt={name} className="cover-img" />
+          </a>
+        ))}
+      </div>
+      <a href="/games">See all games</a>
+    </section>
+  )
+}

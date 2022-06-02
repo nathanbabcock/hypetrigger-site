@@ -21,7 +21,7 @@ export async function getStaticPaths() {
   }
 }
 
-export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
+type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
 export default function GamePage({ config, gameInfo }: InferredProps) {
   const year =
     gameInfo && new Date(gameInfo.first_release_date * 1000).getFullYear()

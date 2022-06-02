@@ -97,9 +97,3 @@ export async function fetchGameInfo(config: Config, token: TwitchBearerToken): P
   if (json.length === 0) return undefined
   return json[0] as IGDBGameInfo
 }
-
-export function getAllGameInfo() {
-  const configs = getConfigIds()
-  // const allGameInfo: []
-  // TODO
-}
