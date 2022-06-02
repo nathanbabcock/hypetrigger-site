@@ -1,5 +1,6 @@
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { useRouter } from 'next/router'
+import Layout from '../../components/Layout'
 import { getConfig, getConfigIds } from '../../fetch/game-configs'
 import { getGameInfo } from '../../fetch/igdb'
 import { getCoverImg } from '../../fetch/igdb-img'
@@ -27,7 +28,7 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
     gameInfo && new Date(gameInfo.first_release_date * 1000).getFullYear()
 
   return (
-    <>
+    <Layout>
       <img src={getCoverImg(gameInfo?.cover.image_id)} alt={config.title} />
       <h1>
         {config.title} {gameInfo && `(${year})`}{' '}
@@ -42,6 +43,6 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
       <pre>
         <code>{JSON.stringify(config, null, 2)}</code>
       </pre>
-    </>
+    </Layout>
   )
 }

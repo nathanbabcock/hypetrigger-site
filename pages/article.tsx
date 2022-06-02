@@ -1,12 +1,12 @@
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Layout from '../components/Layout'
 import { DISCORD_INVITE } from '../fetch/discord'
 import styles from '../styles/Article.module.scss'
 
 export default function Article() {
   return (
-    <div className="wrapper">
-      <Header />
+    <Layout>
       <div className={styles.article}>
         <h1>
           Three methodologies for automated video game highlight detection and
@@ -291,7 +291,6 @@ export default function Article() {
           .
         </p>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
