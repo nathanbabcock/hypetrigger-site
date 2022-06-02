@@ -1,0 +1,15 @@
+.h1 {
+  margin-top: var(--xl);
+  text-align: center;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+  margin-bottom: var(--xl);
+}
+
+.screenshot {
+  width: 100%;
+}

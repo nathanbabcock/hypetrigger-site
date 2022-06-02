@@ -58,9 +58,9 @@ export default function Home(props: InferredProps) {
                 <strong>Now it's even easier.</strong>
               </p>
             </div>
-            <a href="/screenshots/0.10.0.png" target="blank">
+            <a href="/screenshots">
               <img
-                className={styles.screenshot}
+                className="screenshot"
                 src="/screenshots/0.10.0.png"
                 alt="Screenshot of Hypetrigger v0.10.0"
               />
