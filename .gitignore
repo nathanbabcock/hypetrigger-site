@@ -3,6 +3,7 @@
 # custom
 env.ts
 cache
+.vscode
 
 # dependencies
 /node_modules
