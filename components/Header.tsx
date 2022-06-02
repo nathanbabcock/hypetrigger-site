@@ -6,7 +6,7 @@ import styles from '../styles/Header.module.scss'
 export default function Header(props: ComponentProps<'header'>) {
   return (
     <header {...props} className={clsx(styles.header, props.className)}>
-      <a href="https://hypetrigger.io" className={styles.homeLink}>
+      <a href="/" className={styles.homeLink}>
         <img
           className={styles.logo}
           src="/logo.svg"

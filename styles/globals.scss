@@ -5,6 +5,7 @@
 :root {
   --blue: cornflowerblue;
   --green: limegreen;
+  --gray: #282c34;
 
   --xl: 80px;
   --lg: 40px;
@@ -12,7 +13,8 @@
   --sm: 10px;
   --xs: 5px;
 
-  --drop-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+  // --drop-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+  --drop-shadow: 0 8px 15px rgb(0 0 0 / 60%);
   --capsule: 9999px;
 }
 
@@ -22,6 +24,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--gray);
+  color: white;
 }
 
 a {
@@ -37,4 +41,10 @@ a {
   max-width: 1024px;
   padding: 20px;
   margin: 0 auto;
+  position: relative;
+
+  // &.light {
+  //   background: white;
+  //   color: black;
+  // }
 }

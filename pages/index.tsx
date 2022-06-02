@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -60,14 +61,15 @@ export default function Home(props: InferredProps) {
             </div>
             <a href="/screenshots">
               <img
-                className="screenshot"
+                className={clsx('screenshot', styles.screenshot)}
                 src="/screenshots/0.10.0.png"
                 alt="Screenshot of Hypetrigger v0.10.0"
               />
             </a>
             <h2>
-              Automatically record gaming highlight videos, GPU accelerated and
-              powered by computer vision.
+              Automatically record gaming highlight videos,
+              <br />
+              GPU accelerated and powered by computer vision.
             </h2>
             {/* social buttons */}
           </main>
