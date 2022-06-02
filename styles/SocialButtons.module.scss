@@ -1,8 +1,4 @@
 .socialButtons {
-  --techcrunch: #0a9e01;
-  --productHunt: #da552f;
-  --discord: #5865f2;
-
   display: flex;
   justify-content: center;
   margin-top: var(--md);
@@ -84,4 +80,29 @@
   height: 10px;
   background: var(--discord);
   border-radius: var(--capsule);
+}
+
+.techcrunchWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.techcrunch {
+  position: relative;
+  z-index: 1;
+}
+
+.mirror {
+  opacity: 0.75;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  transition: bottom 0.3s ease-in-out;
+
+  .techcrunchWrapper:hover & {
+    bottom: -15px;
+  }
 }

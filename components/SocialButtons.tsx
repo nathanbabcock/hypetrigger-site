@@ -17,17 +17,26 @@ export default function SocialButtons() {
 
   return (
     <div className={styles.socialButtons}>
-      <a
-        className={clsx(styles.btn, styles.techcrunch)}
-        href="https://techcrunch.com/2021/09/10/3-methodologies-for-automated-video-game-highlight-detection-and-capture/"
-        target="blank"
-      >
-        <img src="/img/techcrunch.svg" alt="" />
-        <div className={styles.middle}>
-          <div className={styles.feat}>Featured on</div>
-          <div className={styles.name}>Techcrunch</div>
-        </div>
-      </a>
+      <div className={styles.techcrunchWrapper}>
+        <a
+          className={clsx(styles.btn, styles.techcrunch)}
+          href="https://techcrunch.com/2021/09/10/3-methodologies-for-automated-video-game-highlight-detection-and-capture/"
+          target="blank"
+        >
+          <img src="/img/techcrunch.svg" alt="" />
+          <div className={styles.middle}>
+            <div className={styles.feat}>Featured on</div>
+            <div className={styles.name}>Techcrunch</div>
+          </div>
+        </a>
+        <a
+          href="/article"
+          className={styles.mirror}
+          title="Read the article without a paywall"
+        >
+          (mirror)
+        </a>
+      </div>
 
       <a
         className={styles.productHunt}
