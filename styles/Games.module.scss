@@ -1,0 +1,46 @@
+@import 'hover';
+
+.gamesWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.search {
+  font-size: 24px !important;
+  margin-bottom: var(--md);
+  width: 100%;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.game {
+  @include hover;
+
+  text-decoration: none !important;
+  padding: var(--md);
+  border-radius: var(--md);
+  background: var(--hover-light);
+  display: flex;
+  gap: var(--md);
+}
+
+.cover {
+  width: 100px;
+}
+
+.gameRight {
+  display: flex;
+  flex-direction: column;
+}

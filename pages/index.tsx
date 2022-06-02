@@ -103,7 +103,7 @@ export default function Home(props: InferredProps) {
 
 function GamesSection({ featuredGames }: InferredProps) {
   return (
-    <section>
+    <section className={styles.gamesSection}>
       <h2>Support for most popular games</h2>
       <div className={styles.featuredGames}>
         {featuredGames.map(({ name, url, id }) => (
@@ -112,7 +112,9 @@ function GamesSection({ featuredGames }: InferredProps) {
           </a>
         ))}
       </div>
-      <a href="/games">See all games</a>
+      <a className="btn-lg" href="/games">
+        See all games
+      </a>
     </section>
   )
 }

@@ -13,6 +13,9 @@
   --productHunt: #da552f;
   --discord: #5865f2;
 
+  --hover-light: rgba(255 255 255 / 10%);
+  --hover-dark: rgba(0 0 0 / 10%);
+
   --xl: 80px;
   --lg: 40px;
   --md: 20px;
@@ -43,6 +46,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input[type='text'] {
+  font-family: var(--font-family);
+  border: none;
+  background: rgba(255 255 255 / 10%);
+  border-radius: var(--capsule);
+  padding: var(--xs) var(--md);
+  color: inherit;
+  font-size: inherit;
 }
 
 .wrapper {

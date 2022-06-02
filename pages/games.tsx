@@ -1,26 +1,84 @@
 import type { InferGetStaticPropsType } from 'next'
-import { getConfigIds } from '../fetch/game-configs'
+import { Config } from '../../hypetrigger/src/configs'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import { DISCORD_INVITE } from '../fetch/discord'
+import { getConfig, getConfigIds } from '../fetch/game-configs'
+import { getGameInfo, IGDBGameInfo } from '../fetch/igdb'
+import { getCoverImg } from '../fetch/igdb-img'
+import styles from '../styles/Games.module.scss'
 
-export const getStaticProps = async () => ({
-  props: {
-    message: 'Hello World',
-    games: getConfigIds(),
-  },
-})
+type GameItem = {
+  config: Config
+  gameInfo: IGDBGameInfo | null
+}
+
+export const getStaticProps = async () => {
+  const configs = getConfigIds().map(getConfig)
+  const games: GameItem[] = await Promise.all(
+    configs.map(async config => ({
+      config,
+      gameInfo: (await getGameInfo(config)) ?? null,
+    }))
+  )
+
+  return {
+    props: {
+      games,
+    },
+  }
+}
 
 export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
-export default function GamePage({ message, games }: InferredProps) {
+export default function GamePage({ games }: InferredProps) {
   return (
-    <>
-      <h1>Games</h1>
-      <p>{message}</p>
-      <ul>
-        {games?.map((game, i) => (
-          <li key={i}>
-            <a href={`/games/${game}`}>{game}</a>
-          </li>
-        ))}
-      </ul>
-    </>
+    <div className="wrapper">
+      <Header />
+      <div className={styles.gamesWrapper}>
+        <h1>Supported Games</h1>
+        <p>
+          Optimized configs for all of these games come with Hypetrigger by
+          default.
+        </p>
+        <p>
+          If your game isn't supported,{' '}
+          <a href={DISCORD_INVITE} target="blank">
+            request it on Discord
+          </a>
+          . Check out the JSON config files for each of this games in the{' '}
+          <a
+            href="https://github.com/nathanbabcock/hypetrigger-configs"
+            target="blank"
+          >
+            <code>hypetrigger-configs</code> repo on Github
+          </a>
+          .
+        </p>
+
+        <input type="text" className={styles.search} placeholder="Search..." />
+        <div className={styles.games}>
+          {games.map(game => (
+            <a
+              href={`/games/${game.config?.id}`}
+              className={styles.game}
+              key={game.config.id}
+            >
+              <img
+                className={styles.cover}
+                src={getCoverImg(game.gameInfo?.cover.image_id)}
+                alt=""
+              />
+              <div className={styles.gameRight}>
+                <strong className={styles.gameName}>{game.config.title}</strong>
+                <span className={styles.gameTriggers}>
+                  {game.config.triggers?.length ?? 0} triggers
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </div>
   )
 }

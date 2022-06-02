@@ -15,9 +15,15 @@
   }
 }
 
+.gamesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .featuredGames {
   max-width: 530px;
-  margin: 0 auto;
+  margin: 0 auto var(--md);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

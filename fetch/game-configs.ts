@@ -2,6 +2,11 @@ import { readdirSync, readFileSync } from 'fs'
 import { join, resolve } from 'path'
 import type { Config } from 'hypetrigger/src/configs'
 
+export const CONFIG_BLACKLIST = [
+  'blank-config',
+  'blank-trigger',
+]
+
 export function getConfig(game: string): Config {
   const __dirname = resolve()
   const configFilename = join(__dirname, `../hypetrigger/src/configs/${game}.json`)
@@ -16,5 +21,6 @@ export function getConfigIds(): string[] {
   const files = readdirSync(configsFolder)
     .filter(file => file.endsWith('.json'))
     .map(game => game.split('.json')[0])
+    .filter(id => !CONFIG_BLACKLIST.includes(id))
   return files
 }
