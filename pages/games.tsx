@@ -71,8 +71,21 @@ export default function GamePage({ games }: InferredProps) {
               <div className={styles.gameRight}>
                 <strong className={styles.gameName}>{game.config.title}</strong>
                 <span className={styles.gameTriggers}>
-                  {game.config.triggers?.length ?? 0} triggers
+                  {game.config.triggers?.length ?? 0} trigger
+                  {game.config.triggers?.length !== 1 ? 's' : ''}
                 </span>
+                {(game.config.triggers?.length ?? 0) > 0 && (
+                  <ul className={styles.triggerList}>
+                    {game.config.triggers.slice(0, 3).map(trigger => (
+                      <li key={trigger.id}>{trigger.title}</li>
+                    ))}
+                    {game.config.triggers.length > 3 && (
+                      <li className={styles.more}>
+                        + {game.config.triggers.length - 3} more triggers...
+                      </li>
+                    )}
+                  </ul>
+                )}
               </div>
             </a>
           ))}

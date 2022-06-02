@@ -5,6 +5,9 @@ import type { Config } from 'hypetrigger/src/configs'
 export const CONFIG_BLACKLIST = [
   'blank-config',
   'blank-trigger',
+  'debug-image-average',
+  'debug-thresholds-by-10',
+  'debug-thresholds-duplicate',
 ]
 
 export function getConfig(game: string): Config {

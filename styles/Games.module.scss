@@ -38,9 +38,29 @@
 
 .cover {
   width: 100px;
+  height: auto;
+  object-fit: cover;
 }
 
 .gameRight {
   display: flex;
   flex-direction: column;
+}
+
+.gameTriggers {
+  opacity: 0.75;
+}
+
+.triggerList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: var(--sm);
+  border-left: 1px solid var(--hover-light);
+  margin-left: 4px;
+}
+
+.more {
+  opacity: 0.75;
+  font-size: 14px;
 }
