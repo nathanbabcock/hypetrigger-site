@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap';
 @import './buttons.scss';
 @import './cover-img.scss';
 @import './screenshot.scss';
@@ -18,6 +19,7 @@
   --xs: 5px;
 
   // --drop-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+  --font-family: Catamaran, sans-serif;
   --drop-shadow: 0 8px 15px rgb(0 0 0 / 60%);
   --capsule: 9999px;
 }
@@ -26,8 +28,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-family);
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: var(--gray);
   color: white;
 }
