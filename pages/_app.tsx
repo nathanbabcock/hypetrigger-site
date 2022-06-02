@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/logo.svg" type="image/svg" />
+        <link rel="icon" href="/img/logo.svg" type="image/svg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
 

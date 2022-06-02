@@ -1,21 +1,22 @@
 import clsx from 'clsx'
-import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SearchLights from '../components/SearchLights'
+import SocialButtons from '../components/SocialButtons'
 import { getConfig, getConfigIds } from '../fetch/game-configs'
 import { getGameInfo } from '../fetch/igdb'
 import { getCoverImg } from '../fetch/igdb-img'
 import styles from '../styles/Home.module.scss'
 import shuffle from '../util/shuffle'
 
-export type FeaturedGame = {
+type FeaturedGame = {
   name: string
   id: string
   url: string
 }
 
-export const NUM_FEATURED_GAMES = 9
+const NUM_FEATURED_GAMES = 9
 export const getStaticProps = async () => {
   const configIds = getConfigIds()
   shuffle(configIds)
@@ -66,12 +67,8 @@ export default function Home(props: InferredProps) {
                 alt="Screenshot of Hypetrigger v0.10.0"
               />
             </a>
-            <h2>
-              Automatically record gaming highlight videos,
-              <br />
-              GPU accelerated and powered by computer vision.
-            </h2>
-            {/* social buttons */}
+            <SocialButtons />
+            <h2>Lightning fast / GPU-accelerated / computer vision</h2>
           </main>
           <GamesSection {...props} />
           <section>

@@ -1,0 +1,87 @@
+.socialButtons {
+  --techcrunch: #0a9e01;
+  --productHunt: #da552f;
+  --discord: #5865f2;
+
+  display: flex;
+  justify-content: center;
+  margin-top: var(--md);
+  gap: var(--md);
+}
+
+.btn,
+.productHunt {
+  display: flex;
+  border-radius: 10px;
+  // box-shadow: 0 8px 15px rgb(255 255 255 / 40%);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 40%);
+  border: 1px solid;
+  height: 56px;
+  background-color: #221d21;
+}
+
+.btn {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+
+  img {
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.feat {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--md);
+  gap: 4px;
+}
+
+.value {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.techcrunch {
+  border-color: var(--techcrunch);
+}
+
+.productHunt {
+  border-color: var(--productHunt);
+}
+
+.discord {
+  border-color: var(--discord);
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  background: var(--discord);
+  border-radius: var(--capsule);
+}
