@@ -54,7 +54,12 @@ export default function Footer() {
               <a href="/screenshots">Screenshots</a>
             </li>
             <li>
-              <a href="asdf">Read the article</a>
+              <a
+                href="https://techcrunch.com/2021/09/10/3-methodologies-for-automated-video-game-highlight-detection-and-capture/"
+                target="blank"
+              >
+                Read the article
+              </a>
             </li>
             <li>
               <a href="/#download">Download</a>
