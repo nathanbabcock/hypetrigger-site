@@ -53,9 +53,14 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
           className={styles.coverImg}
         />
         <div className={styles.gameInfoRight}>
+          <a href="/games" className={styles.back} title="Back to games">
+            Games/
+          </a>
           <h1>{config.title}</h1>
-          {gameInfo && <p>({year})</p>}
-          <p>{config.triggers.length} triggers</p>
+          <p className={styles.numTriggers}>
+            {config.triggers.length} trigger
+            {config.triggers.length !== 1 && 's'}
+          </p>
         </div>
       </div>
 
@@ -91,7 +96,10 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
         <div className={styles.triggers}>
           {config.triggers?.map(trigger => (
             <div className={styles.trigger} key={trigger.id}>
-              <div className={styles.triggerDiagram}>
+              <div
+                className={styles.triggerDiagram}
+                title="The smaller green rectangle is the region of the screen captured by this trigger"
+              >
                 <div
                   className={styles.cropRegion}
                   style={{
