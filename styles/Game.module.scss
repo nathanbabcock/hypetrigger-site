@@ -52,6 +52,7 @@
 }
 
 .trigger {
+  @include hover;
   display: flex;
   align-items: center;
   gap: var(--md);

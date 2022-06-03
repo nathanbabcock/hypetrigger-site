@@ -16,27 +16,27 @@ export default function Header(props: ComponentProps<'header'>) {
       <nav className={styles.nav}>
         <ul>
           {/* <li>Try online</li> */}
-          {/* <li>Supported games</li> */}
           <li>
+            <a href="/games">Supported games</a>
+          </li>
+          {/* <li>
             <a
               href="https://techcrunch.com/2021/09/10/3-methodologies-for-automated-video-game-highlight-detection-and-capture/"
               target="blank"
             >
               Read the article
             </a>
+          </li> */}
+          <li>
+            <a href="/#download">Download client</a>
           </li>
           <li>
-            <a href="/download">Download client</a>
-          </li>
-          <li>
-            <a href={DISCORD_INVITE} target="blank">
-              Join Discord
-            </a>
+            <a href="/discord">Join Discord</a>
           </li>
         </ul>
       </nav>
 
-      <a href="#download" className="btn-lg">
+      <a href="/#download" className="btn-lg">
         Download for free
       </a>
     </header>
