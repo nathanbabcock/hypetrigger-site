@@ -29,7 +29,7 @@
 
 .coverImg {
   @include hover;
-  box-shadow: var(--drop-shadow);
+  box-shadow: var(--shadow);
   max-width: 45vw;
   object-fit: cover;
 }

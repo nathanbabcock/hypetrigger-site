@@ -56,14 +56,8 @@ export default function GamePage({ games }: InferredProps) {
           <a href={DISCORD_INVITE} target="blank">
             request it on Discord
           </a>
-          . Check out the JSON config files for each of this games in the{' '}
-          <a
-            href="https://github.com/nathanbabcock/hypetrigger-configs"
-            target="blank"
-          >
-            <code>hypetrigger-configs</code> repo on Github
-          </a>
-          .
+          {' or '}
+          <a href="/custom-configs">add it yourself</a>.
         </p>
 
         <input

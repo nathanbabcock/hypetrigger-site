@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.container h2 {
+  text-align: center;
+}
+
 .topText {
   margin: var(--lg) 0;
 
@@ -34,4 +38,57 @@
 .screenshot {
   @include hover;
   box-shadow: 0 20px 60px rgb(255 255 255 / 25%);
+}
+
+.downloadSection {
+  margin-top: 150px;
+  background-color: var(--hover-light);
+  padding: var(--lg) var(--lg) var(--xl);
+  border-radius: var(--md);
+  box-shadow: 0 10px 20px rgba(0 0 0 / 20%);
+}
+
+.downloadWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.downloadBtn {
+  @include hover;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--md);
+  background: var(--purple);
+  padding: var(--md) var(--lg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadLogo {
+  width: 64px;
+}
+
+.downloadRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.downloadLabel {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.downloadVersion {
+  font-family: var(--font-secondary);
+}
+
+.downloadNote {
+  opacity: 50%;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: var(--xl);
 }

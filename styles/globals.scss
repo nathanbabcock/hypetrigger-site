@@ -8,6 +8,7 @@
   --blue: cornflowerblue;
   --green: limegreen;
   --gray: #282c34;
+  --purple: #6c26ff;
 
   --techcrunch: #0a9e01;
   --productHunt: #da552f;
@@ -22,9 +23,13 @@
   --sm: 10px;
   --xs: 5px;
 
-  // --drop-shadow: 0 8px 15px rgb(0 0 0 / 20%);
   --font-family: Catamaran, sans-serif;
-  --drop-shadow: 0 8px 15px rgb(0 0 0 / 60%);
+  --font-secondary: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --monospace: monospace;
+
+  // --shadow: 0 8px 15px rgb(0 0 0 / 20%);
+  --shadow: 0 8px 15px rgb(0 0 0 / 60%);
   --capsule: 9999px;
 }
 
@@ -33,10 +38,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: var(--gray);
   color: white;
+  scroll-behavior: smooth;
 }
 
 a {

@@ -8,6 +8,7 @@ import { getGameInfo } from '../fetch/igdb'
 import { getCoverImg } from '../fetch/igdb-img'
 import styles from '../styles/Home.module.scss'
 import shuffle from '../util/shuffle'
+import latest from '../public/download/latest.json'
 
 type FeaturedGame = {
   name: string
@@ -66,22 +67,25 @@ export default function Home(props: InferredProps) {
           <SocialButtons />
           <h2>Lightning fast / GPU-accelerated / computer vision</h2>
         </main>
+
         <GamesSection {...props} />
-        <section>
+
+        {/* <section>
           <h2>Intuitive UI, powerful AI</h2>
           <ol>
             <li>Put in gameplay videos</li>
             <li>Each frame is analyzed for known triggers</li>
             <li>Clips are generated at each event</li>
           </ol>
-        </section>
-        <section>
+        </section> */}
+
+        {/* <section>
           <h2>Lightning fast features</h2>
-        </section>
-        <section>
-          <h2>Free download for Windows</h2>
-        </section>
-        <section>
+        </section> */}
+
+        <DownloadSection />
+
+        {/* <section>
           <h2>Patch notes in your inbox</h2>
           <p>
             Stay up to date with the latest development. Weekly updates all
@@ -89,7 +93,7 @@ export default function Home(props: InferredProps) {
           </p>
           <input type="text" placeholder="tim@apple.com" />
           <button>Send</button>
-        </section>
+        </section> */}
       </div>
     </Layout>
   )
@@ -112,5 +116,39 @@ function GamesSection({ featuredGames }: InferredProps) {
         See all games
       </a>
     </section>
+  )
+}
+
+function DownloadSection() {
+  return (
+    <>
+      <section id="download" className={styles.downloadSection}>
+        <h2>Free download for Windows</h2>
+        <div className={styles.downloadWrapper}>
+          <ul>
+            <li>Compatible with Windows 7, 8, 10, and 11 (64-bit)</li>
+            <li>&#x2248; 400MB installer</li>
+            <li>Automatic updates</li>
+            <li>Free</li>
+          </ul>
+
+          <a
+            href={latest.platforms['windows-x86_64'].url}
+            className={styles.downloadBtn}
+          >
+            <img src="/img/logo.svg" className={styles.downloadLogo} alt="" />
+            <div className={styles.downloadRight}>
+              <span className={styles.downloadLabel}>Download Hypetrigger</span>
+              <span className={styles.downloadVersion}>
+                <code>{latest.version}</code> for Windows
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <p className={styles.downloadNote}>
+        Last updated <code>{latest.pub_date}</code>
+      </p>
+    </>
   )
 }
