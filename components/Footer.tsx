@@ -48,6 +48,9 @@ export default function Footer() {
               <a href="/games">Supported games</a>
             </li>
             <li>
+              <a href="/custom-configs">Custom configs</a>
+            </li>
+            <li>
               <a href="/screenshots">Screenshots</a>
             </li>
             <li>

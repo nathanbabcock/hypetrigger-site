@@ -1,7 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
+import { useState } from 'react'
 import { Config } from '../../hypetrigger/src/configs'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Layout from '../components/Layout'
 import { DISCORD_INVITE } from '../fetch/discord'
 import { getConfig, getConfigIds } from '../fetch/game-configs'
@@ -32,6 +31,18 @@ export const getStaticProps = async () => {
 
 export type InferredProps = InferGetStaticPropsType<typeof getStaticProps>
 export default function GamePage({ games }: InferredProps) {
+  const [searchQuery, setSearchQuery] = useState('')
+  const filteredGames =
+    searchQuery === ''
+      ? games
+      : games.filter(
+          game =>
+            game.config.title
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase()) ||
+            game.config.id.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+
   return (
     <Layout>
       <div className={styles.gamesWrapper}>
@@ -55,9 +66,28 @@ export default function GamePage({ games }: InferredProps) {
           .
         </p>
 
-        <input type="text" className={styles.search} placeholder="Search..." />
+        <input
+          type="text"
+          className={styles.search}
+          placeholder="Search..."
+          onInput={event => setSearchQuery(event.currentTarget.value)}
+        />
         <div className={styles.games}>
-          {games.map(game => (
+          {filteredGames.length === 0 && (
+            <div className={styles.empty}>
+              <p>No games found for search term "{searchQuery}".</p>
+              You can{' '}
+              <a href={DISCORD_INVITE} target="blank">
+                requesting support for your game on Discord
+              </a>
+              , or{' '}
+              <a href="/custom-configs">
+                add it yourself with a custom config!
+              </a>
+            </div>
+          )}
+
+          {filteredGames.map(game => (
             <a
               href={`/games/${game.config?.id}`}
               className={styles.game}

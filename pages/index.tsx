@@ -1,7 +1,5 @@
 import clsx from 'clsx'
 import type { InferGetStaticPropsType } from 'next'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Layout from '../components/Layout'
 import SearchLights from '../components/SearchLights'
 import SocialButtons from '../components/SocialButtons'
@@ -100,7 +98,9 @@ export default function Home(props: InferredProps) {
 function GamesSection({ featuredGames }: InferredProps) {
   return (
     <section className={styles.gamesSection}>
-      <h2>Support for most popular games</h2>
+      <h2>
+        <a href="/games">Support for most popular games</a>
+      </h2>
       <div className={styles.featuredGames}>
         {featuredGames.map(({ name, url, id }) => (
           <a href={`/games/${id}`} key={id} title={name}>
