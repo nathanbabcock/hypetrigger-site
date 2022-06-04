@@ -8,7 +8,8 @@
   "repository": "github:nathanbabcock/hypetrigger-site",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next build && next export",
     "start": "next dev",
     "lint": "next lint",
     "next": "next"

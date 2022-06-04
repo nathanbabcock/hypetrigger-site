@@ -23,7 +23,7 @@ export async function getStaticPaths() {
   const games = getConfigIds()
   return {
     paths: games.map(game => ({ params: { game } })),
-    fallback: true, // false or 'blocking'
+    fallback: false,
   }
 }
 
