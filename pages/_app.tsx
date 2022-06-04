@@ -1,8 +1,9 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import { GA_TRACKING_ID } from '../env'
 import '../styles/globals.scss'
+
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID!
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

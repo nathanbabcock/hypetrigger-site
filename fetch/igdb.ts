@@ -1,6 +1,4 @@
-import { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET } from '../env'
 import { readCache, writeCache } from './cache'
-import { getConfigIds } from './game-configs'
 import type { Config } from 'hypetrigger/src/configs'
 import cleanConfigTitle from '../util/cleanConfigTitle'
 
@@ -32,8 +30,8 @@ export type IGDBGameInfo = {
 
 export async function fetchAccessToken(): Promise<TwitchBearerToken> {
   const params = new URLSearchParams({
-    'client_id': TWITCH_CLIENT_ID,
-    'client_secret': TWITCH_CLIENT_SECRET,
+    'client_id': process.env.TWITCH_CLIENT_ID!,
+    'client_secret': process.env.TWITCH_CLIENT_SECRET!,
     'grant_type': 'client_credentials',
   })
   const url = `https://id.twitch.tv/oauth2/token?${params.toString()}`;
@@ -77,7 +75,7 @@ export async function fetchGameInfo(config: Config, token: TwitchBearerToken): P
   const result = await fetch('https://api.igdb.com/v4/games/', {
     method: 'POST',
     headers: {
-      'Client-ID': TWITCH_CLIENT_ID,
+      'Client-ID': process.env.TWITCH_CLIENT_ID!,
       'Authorization': `Bearer ${token.access_token}`,
     },
     body: `
