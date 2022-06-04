@@ -1,12 +1,12 @@
 {
-  "name": "v0.10.0",
-  "version": "0.10.0",
-  "notes": "Better UI",
-  "pub_date": "2022-05-20T19:25:57Z",
+  "name": "v0.10.3",
+  "version": "0.10.3",
+  "notes": "Add support for Valorant, Elden Ring, and Destiny 2",
+  "pub_date": "2022-06-04T19:25:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWxnV2tsN3JMaExsdmZzd3RRSjQwL01PWm4ydlFmT1VrUzdlTFhFcE93eEhJYVVvdndkL0JaV3NGMWVjdTlTRGpsTTEramljL0svRXpxWWx5RDNRMTk4dy9ISEdUSVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjUzMDgyMDg5CWZpbGU6RjpcZ2l0XGNsaXBpdC1zdHVkaW9cc3JjLXRhdXJpXHRhcmdldFxyZWxlYXNlXGJ1bmRsZS9tc2kvSHlwZXRyaWdnZXJfMC4xMC4wX3g2NF9lbi1VUy5tc2kuemlwCmpPLzlqWHlxTXZNV0V3NWhSSFJCTS9WZzM5eFFlNWhmNzNQWjBjZFQ1V1M2Si9JT0tFL0lYVGxpMGhZUkdSN0ZlTjhrYVpkOEZGbHdVbG1VSjNucUJnPT0K",
-      "url": "https://hypetrigger-downloads.s3.amazonaws.com/Hypetrigger_0.10.0_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWxnV2tsN3JMaEdhd1FzMFNhbEFuTWdybEdUZWRHU0l3djZMaTNuUFRxbXZaMTF4QnA5UjBxZDhMTk1Pd1hTa2tMeDhnYjE1SFFRb0gzZ3JteW01ekVRWDVwZ0d4eUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjUzOTYwMTIzCWZpbGU6RjpcZ2l0XGh5cGV0cmlnZ2VyXHNyYy10YXVyaVx0YXJnZXRccmVsZWFzZVxidW5kbGUvbXNpL0h5cGV0cmlnZ2VyXzAuMTAuM194NjRfZW4tVVMubXNpLnppcAppMVNFYVlqUEYzQ2tRZEx5RjNmVkFTT1o1a2Fwa241SWlJaEI2UHRpT0ZZWWUrN1ZHTDliN2cxRHdmL05nLy9ZSkNiSEorTk5QZmhRSlhsR0tJUWJEQT09Cg==",
+      "url": "https://hypetrigger-downloads.s3.amazonaws.com/Hypetrigger_0.10.3_x64_en-US.msi.zip"
     }
   }
 }
