@@ -1,0 +1,19 @@
+@import '//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css';
+
+.mailchimp {
+  max-width: 600px;
+  margin-top: var(--xl);
+  padding: var(--md);
+  background: var(--hover-light);
+  border-radius: var(--md);
+  margin: 0 auto;
+
+  input {
+    background: black;
+    color: white;
+  }
+
+  input[type='submit'] {
+    background: limegreen !important;
+  }
+}
