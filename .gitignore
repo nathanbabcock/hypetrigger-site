@@ -5,8 +5,8 @@ env.ts
 cache
 .vscode
 cert/*
-assets/*
-!assets/README.md
+public/assets/*
+!public/assets/README.md
 
 # dependencies
 /node_modules
