@@ -1,0 +1,31 @@
+.timestampLink {
+  text-decoration: none;
+}
+
+.warzone-kill {
+  color: limegreen;
+}
+
+.warzone-victory {
+  color: goldenrod;
+}
+
+.warzone-death {
+  color: red;
+}
+
+.timeline {
+  margin-top: var(--md);
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: var(--hover-light);
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: currentColor;
+}

@@ -1,0 +1,1490 @@
+[
+  {
+    "start": 463.5,
+    "end": 476,
+    "type": "warzone-death",
+    "triggerTime": 473.5
+  },
+  {
+    "start": 464,
+    "end": 476.5,
+    "type": "warzone-death",
+    "triggerTime": 474
+  },
+  {
+    "start": 464.5,
+    "end": 477,
+    "type": "warzone-death",
+    "triggerTime": 474.5
+  },
+  {
+    "start": 486,
+    "end": 498.5,
+    "type": "warzone-death",
+    "triggerTime": 496
+  },
+  {
+    "start": 486.5,
+    "end": 499,
+    "type": "warzone-death",
+    "triggerTime": 496.5
+  },
+  {
+    "start": 487,
+    "end": 499.5,
+    "type": "warzone-death",
+    "triggerTime": 497
+  },
+  {
+    "start": 1210.5,
+    "end": 1223,
+    "type": "warzone-kill",
+    "triggerTime": 1220.5
+  },
+  {
+    "start": 1225,
+    "end": 1237.5,
+    "type": "warzone-death",
+    "triggerTime": 1235
+  },
+  {
+    "start": 1386.5,
+    "end": 1399,
+    "type": "warzone-death",
+    "triggerTime": 1396.5
+  },
+  {
+    "start": 1622,
+    "end": 1634.5,
+    "type": "warzone-death",
+    "triggerTime": 1632
+  },
+  {
+    "start": 1773,
+    "end": 1785.5,
+    "type": "warzone-death",
+    "triggerTime": 1783
+  },
+  {
+    "start": 1915.5,
+    "end": 1933,
+    "type": "warzone-victory",
+    "triggerTime": 1930.5
+  },
+  {
+    "start": 1916,
+    "end": 1933.5,
+    "type": "warzone-victory",
+    "triggerTime": 1931
+  },
+  {
+    "start": 1917,
+    "end": 1934.5,
+    "type": "warzone-victory",
+    "triggerTime": 1932
+  },
+  {
+    "start": 1918,
+    "end": 1935.5,
+    "type": "warzone-victory",
+    "triggerTime": 1933
+  },
+  {
+    "start": 1918.5,
+    "end": 1936,
+    "type": "warzone-victory",
+    "triggerTime": 1933.5
+  },
+  {
+    "start": 1919,
+    "end": 1936.5,
+    "type": "warzone-victory",
+    "triggerTime": 1934
+  },
+  {
+    "start": 1919.5,
+    "end": 1937,
+    "type": "warzone-victory",
+    "triggerTime": 1934.5
+  },
+  {
+    "start": 1920,
+    "end": 1937.5,
+    "type": "warzone-victory",
+    "triggerTime": 1935
+  },
+  {
+    "start": 1920.5,
+    "end": 1938,
+    "type": "warzone-victory",
+    "triggerTime": 1935.5
+  },
+  {
+    "start": 1921,
+    "end": 1938.5,
+    "type": "warzone-victory",
+    "triggerTime": 1936
+  },
+  {
+    "start": 1921.5,
+    "end": 1939,
+    "type": "warzone-victory",
+    "triggerTime": 1936.5
+  },
+  {
+    "start": 1922,
+    "end": 1939.5,
+    "type": "warzone-victory",
+    "triggerTime": 1937
+  },
+  {
+    "start": 2177,
+    "end": 2189.5,
+    "type": "warzone-death",
+    "triggerTime": 2187
+  },
+  {
+    "start": 2177.5,
+    "end": 2190,
+    "type": "warzone-death",
+    "triggerTime": 2187.5
+  },
+  {
+    "start": 2178,
+    "end": 2190.5,
+    "type": "warzone-death",
+    "triggerTime": 2188
+  },
+  {
+    "start": 2188,
+    "end": 2200.5,
+    "type": "warzone-kill",
+    "triggerTime": 2198
+  },
+  {
+    "start": 2188,
+    "end": 2200.5,
+    "type": "warzone-death",
+    "triggerTime": 2198
+  },
+  {
+    "start": 2199.5,
+    "end": 2212,
+    "type": "warzone-death",
+    "triggerTime": 2209.5
+  },
+  {
+    "start": 2901.5,
+    "end": 2914,
+    "type": "warzone-death",
+    "triggerTime": 2911.5
+  },
+  {
+    "start": 2939.5,
+    "end": 2952,
+    "type": "warzone-kill",
+    "triggerTime": 2949.5
+  },
+  {
+    "start": 3096.5,
+    "end": 3109,
+    "type": "warzone-kill",
+    "triggerTime": 3106.5
+  },
+  {
+    "start": 3718,
+    "end": 3735.5,
+    "type": "warzone-victory",
+    "triggerTime": 3733
+  },
+  {
+    "start": 3718.5,
+    "end": 3736,
+    "type": "warzone-victory",
+    "triggerTime": 3733.5
+  },
+  {
+    "start": 3719.5,
+    "end": 3737,
+    "type": "warzone-victory",
+    "triggerTime": 3734.5
+  },
+  {
+    "start": 3720,
+    "end": 3737.5,
+    "type": "warzone-victory",
+    "triggerTime": 3735
+  },
+  {
+    "start": 3720.5,
+    "end": 3738,
+    "type": "warzone-victory",
+    "triggerTime": 3735.5
+  },
+  {
+    "start": 3721.5,
+    "end": 3739,
+    "type": "warzone-victory",
+    "triggerTime": 3736.5
+  },
+  {
+    "start": 3722,
+    "end": 3739.5,
+    "type": "warzone-victory",
+    "triggerTime": 3737
+  },
+  {
+    "start": 3723,
+    "end": 3740.5,
+    "type": "warzone-victory",
+    "triggerTime": 3738
+  },
+  {
+    "start": 3723.5,
+    "end": 3741,
+    "type": "warzone-victory",
+    "triggerTime": 3738.5
+  },
+  {
+    "start": 3724,
+    "end": 3741.5,
+    "type": "warzone-victory",
+    "triggerTime": 3739
+  },
+  {
+    "start": 3724.5,
+    "end": 3742,
+    "type": "warzone-victory",
+    "triggerTime": 3739.5
+  },
+  {
+    "start": 4265.5,
+    "end": 4278,
+    "type": "warzone-kill",
+    "triggerTime": 4275.5
+  },
+  {
+    "start": 4296.5,
+    "end": 4309,
+    "type": "warzone-kill",
+    "triggerTime": 4306.5
+  },
+  {
+    "start": 4374,
+    "end": 4386.5,
+    "type": "warzone-death",
+    "triggerTime": 4384
+  },
+  {
+    "start": 4443.5,
+    "end": 4456,
+    "type": "warzone-kill",
+    "triggerTime": 4453.5
+  },
+  {
+    "start": 4583.5,
+    "end": 4596,
+    "type": "warzone-kill",
+    "triggerTime": 4593.5
+  },
+  {
+    "start": 4602,
+    "end": 4614.5,
+    "type": "warzone-death",
+    "triggerTime": 4612
+  },
+  {
+    "start": 5536,
+    "end": 5548.5,
+    "type": "warzone-kill",
+    "triggerTime": 5546
+  },
+  {
+    "start": 5537,
+    "end": 5549.5,
+    "type": "warzone-kill",
+    "triggerTime": 5547
+  },
+  {
+    "start": 5546.5,
+    "end": 5564,
+    "type": "warzone-victory",
+    "triggerTime": 5561.5
+  },
+  {
+    "start": 5547.5,
+    "end": 5565,
+    "type": "warzone-victory",
+    "triggerTime": 5562.5
+  },
+  {
+    "start": 5548,
+    "end": 5565.5,
+    "type": "warzone-victory",
+    "triggerTime": 5563
+  },
+  {
+    "start": 5548.5,
+    "end": 5566,
+    "type": "warzone-victory",
+    "triggerTime": 5563.5
+  },
+  {
+    "start": 5549,
+    "end": 5566.5,
+    "type": "warzone-victory",
+    "triggerTime": 5564
+  },
+  {
+    "start": 5549.5,
+    "end": 5567,
+    "type": "warzone-victory",
+    "triggerTime": 5564.5
+  },
+  {
+    "start": 5550,
+    "end": 5567.5,
+    "type": "warzone-victory",
+    "triggerTime": 5565
+  },
+  {
+    "start": 5551,
+    "end": 5568.5,
+    "type": "warzone-victory",
+    "triggerTime": 5566
+  },
+  {
+    "start": 5551.5,
+    "end": 5569,
+    "type": "warzone-victory",
+    "triggerTime": 5566.5
+  },
+  {
+    "start": 5552,
+    "end": 5569.5,
+    "type": "warzone-victory",
+    "triggerTime": 5567
+  },
+  {
+    "start": 5552.5,
+    "end": 5570,
+    "type": "warzone-victory",
+    "triggerTime": 5567.5
+  },
+  {
+    "start": 5758.5,
+    "end": 5771,
+    "type": "warzone-death",
+    "triggerTime": 5768.5
+  },
+  {
+    "start": 5759.5,
+    "end": 5772,
+    "type": "warzone-death",
+    "triggerTime": 5769.5
+  },
+  {
+    "start": 5760,
+    "end": 5772.5,
+    "type": "warzone-death",
+    "triggerTime": 5770
+  },
+  {
+    "start": 5770,
+    "end": 5782.5,
+    "type": "warzone-death",
+    "triggerTime": 5780
+  },
+  {
+    "start": 5770.5,
+    "end": 5783,
+    "type": "warzone-death",
+    "triggerTime": 5780.5
+  },
+  {
+    "start": 5771,
+    "end": 5783.5,
+    "type": "warzone-death",
+    "triggerTime": 5781
+  },
+  {
+    "start": 5948.5,
+    "end": 5961,
+    "type": "warzone-kill",
+    "triggerTime": 5958.5
+  },
+  {
+    "start": 6730.5,
+    "end": 6743,
+    "type": "warzone-kill",
+    "triggerTime": 6740.5
+  },
+  {
+    "start": 6780.5,
+    "end": 6793,
+    "type": "warzone-death",
+    "triggerTime": 6790.5
+  },
+  {
+    "start": 6781,
+    "end": 6793.5,
+    "type": "warzone-death",
+    "triggerTime": 6791
+  },
+  {
+    "start": 6781.5,
+    "end": 6794,
+    "type": "warzone-death",
+    "triggerTime": 6791.5
+  },
+  {
+    "start": 6782,
+    "end": 6794.5,
+    "type": "warzone-death",
+    "triggerTime": 6792
+  },
+  {
+    "start": 6958.5,
+    "end": 6971,
+    "type": "warzone-death",
+    "triggerTime": 6968.5
+  },
+  {
+    "start": 6959,
+    "end": 6971.5,
+    "type": "warzone-death",
+    "triggerTime": 6969
+  },
+  {
+    "start": 7326.5,
+    "end": 7339,
+    "type": "warzone-death",
+    "triggerTime": 7336.5
+  },
+  {
+    "start": 7434.5,
+    "end": 7447,
+    "type": "warzone-death",
+    "triggerTime": 7444.5
+  },
+  {
+    "start": 7922,
+    "end": 7934.5,
+    "type": "warzone-kill",
+    "triggerTime": 7932
+  },
+  {
+    "start": 8128,
+    "end": 8140.5,
+    "type": "warzone-death",
+    "triggerTime": 8138
+  },
+  {
+    "start": 8238.5,
+    "end": 8251,
+    "type": "warzone-kill",
+    "triggerTime": 8248.5
+  },
+  {
+    "start": 8252,
+    "end": 8264.5,
+    "type": "warzone-death",
+    "triggerTime": 8262
+  },
+  {
+    "start": 8787,
+    "end": 8799.5,
+    "type": "warzone-death",
+    "triggerTime": 8797
+  },
+  {
+    "start": 8941.5,
+    "end": 8954,
+    "type": "warzone-kill",
+    "triggerTime": 8951.5
+  },
+  {
+    "start": 9127,
+    "end": 9139.5,
+    "type": "warzone-death",
+    "triggerTime": 9137
+  },
+  {
+    "start": 9162.5,
+    "end": 9175,
+    "type": "warzone-kill",
+    "triggerTime": 9172.5
+  },
+  {
+    "start": 9288,
+    "end": 9300.5,
+    "type": "warzone-death",
+    "triggerTime": 9298
+  },
+  {
+    "start": 9302.5,
+    "end": 9315,
+    "type": "warzone-kill",
+    "triggerTime": 9312.5
+  },
+  {
+    "start": 9302.5,
+    "end": 9315,
+    "type": "warzone-death",
+    "triggerTime": 9312.5
+  },
+  {
+    "start": 9303.5,
+    "end": 9316,
+    "type": "warzone-kill",
+    "triggerTime": 9313.5
+  },
+  {
+    "start": 9338,
+    "end": 9350.5,
+    "type": "warzone-death",
+    "triggerTime": 9348
+  },
+  {
+    "start": 9339,
+    "end": 9351.5,
+    "type": "warzone-death",
+    "triggerTime": 9349
+  },
+  {
+    "start": 9343,
+    "end": 9355.5,
+    "type": "warzone-kill",
+    "triggerTime": 9353
+  },
+  {
+    "start": 9562.5,
+    "end": 9575,
+    "type": "warzone-death",
+    "triggerTime": 9572.5
+  },
+  {
+    "start": 9742,
+    "end": 9754.5,
+    "type": "warzone-death",
+    "triggerTime": 9752
+  },
+  {
+    "start": 9967.5,
+    "end": 9980,
+    "type": "warzone-death",
+    "triggerTime": 9977.5
+  },
+  {
+    "start": 9968,
+    "end": 9980.5,
+    "type": "warzone-death",
+    "triggerTime": 9978
+  },
+  {
+    "start": 9968.5,
+    "end": 9981,
+    "type": "warzone-death",
+    "triggerTime": 9978.5
+  },
+  {
+    "start": 9969,
+    "end": 9981.5,
+    "type": "warzone-death",
+    "triggerTime": 9979
+  },
+  {
+    "start": 9969.5,
+    "end": 9982,
+    "type": "warzone-death",
+    "triggerTime": 9979.5
+  },
+  {
+    "start": 10102.5,
+    "end": 10115,
+    "type": "warzone-kill",
+    "triggerTime": 10112.5
+  },
+  {
+    "start": 10103,
+    "end": 10115.5,
+    "type": "warzone-death",
+    "triggerTime": 10113
+  },
+  {
+    "start": 10276.5,
+    "end": 10289,
+    "type": "warzone-kill",
+    "triggerTime": 10286.5
+  },
+  {
+    "start": 10277,
+    "end": 10289.5,
+    "type": "warzone-kill",
+    "triggerTime": 10287
+  },
+  {
+    "start": 10277.5,
+    "end": 10290,
+    "type": "warzone-kill",
+    "triggerTime": 10287.5
+  },
+  {
+    "start": 10284.5,
+    "end": 10302,
+    "type": "warzone-victory",
+    "triggerTime": 10299.5
+  },
+  {
+    "start": 10285,
+    "end": 10302.5,
+    "type": "warzone-victory",
+    "triggerTime": 10300
+  },
+  {
+    "start": 10286,
+    "end": 10303.5,
+    "type": "warzone-victory",
+    "triggerTime": 10301
+  },
+  {
+    "start": 10286.5,
+    "end": 10304,
+    "type": "warzone-victory",
+    "triggerTime": 10301.5
+  },
+  {
+    "start": 10287.5,
+    "end": 10305,
+    "type": "warzone-victory",
+    "triggerTime": 10302.5
+  },
+  {
+    "start": 10288.5,
+    "end": 10306,
+    "type": "warzone-victory",
+    "triggerTime": 10303.5
+  },
+  {
+    "start": 10289,
+    "end": 10306.5,
+    "type": "warzone-victory",
+    "triggerTime": 10304
+  },
+  {
+    "start": 10289.5,
+    "end": 10307,
+    "type": "warzone-victory",
+    "triggerTime": 10304.5
+  },
+  {
+    "start": 10290,
+    "end": 10307.5,
+    "type": "warzone-victory",
+    "triggerTime": 10305
+  },
+  {
+    "start": 10290.5,
+    "end": 10308,
+    "type": "warzone-victory",
+    "triggerTime": 10305.5
+  },
+  {
+    "start": 10291,
+    "end": 10308.5,
+    "type": "warzone-victory",
+    "triggerTime": 10306
+  },
+  {
+    "start": 10470,
+    "end": 10482.5,
+    "type": "warzone-death",
+    "triggerTime": 10480
+  },
+  {
+    "start": 10471,
+    "end": 10483.5,
+    "type": "warzone-death",
+    "triggerTime": 10481
+  },
+  {
+    "start": 10481,
+    "end": 10493.5,
+    "type": "warzone-death",
+    "triggerTime": 10491
+  },
+  {
+    "start": 10481.5,
+    "end": 10494,
+    "type": "warzone-death",
+    "triggerTime": 10491.5
+  },
+  {
+    "start": 10482,
+    "end": 10494.5,
+    "type": "warzone-death",
+    "triggerTime": 10492
+  },
+  {
+    "start": 10482.5,
+    "end": 10495,
+    "type": "warzone-death",
+    "triggerTime": 10492.5
+  },
+  {
+    "start": 10494,
+    "end": 10506.5,
+    "type": "warzone-death",
+    "triggerTime": 10504
+  },
+  {
+    "start": 10504,
+    "end": 10516.5,
+    "type": "warzone-death",
+    "triggerTime": 10514
+  },
+  {
+    "start": 10549,
+    "end": 10561.5,
+    "type": "warzone-death",
+    "triggerTime": 10559
+  },
+  {
+    "start": 11573,
+    "end": 11585.5,
+    "type": "warzone-kill",
+    "triggerTime": 11583
+  },
+  {
+    "start": 12020,
+    "end": 12037.5,
+    "type": "warzone-victory",
+    "triggerTime": 12035
+  },
+  {
+    "start": 12020.5,
+    "end": 12038,
+    "type": "warzone-victory",
+    "triggerTime": 12035.5
+  },
+  {
+    "start": 12021,
+    "end": 12038.5,
+    "type": "warzone-victory",
+    "triggerTime": 12036
+  },
+  {
+    "start": 12021.5,
+    "end": 12039,
+    "type": "warzone-victory",
+    "triggerTime": 12036.5
+  },
+  {
+    "start": 12022,
+    "end": 12039.5,
+    "type": "warzone-victory",
+    "triggerTime": 12037
+  },
+  {
+    "start": 12022.5,
+    "end": 12040,
+    "type": "warzone-victory",
+    "triggerTime": 12037.5
+  },
+  {
+    "start": 12023.5,
+    "end": 12041,
+    "type": "warzone-victory",
+    "triggerTime": 12038.5
+  },
+  {
+    "start": 12024,
+    "end": 12041.5,
+    "type": "warzone-victory",
+    "triggerTime": 12039
+  },
+  {
+    "start": 12024.5,
+    "end": 12042,
+    "type": "warzone-victory",
+    "triggerTime": 12039.5
+  },
+  {
+    "start": 12025,
+    "end": 12042.5,
+    "type": "warzone-victory",
+    "triggerTime": 12040
+  },
+  {
+    "start": 12025.5,
+    "end": 12043,
+    "type": "warzone-victory",
+    "triggerTime": 12040.5
+  },
+  {
+    "start": 12026,
+    "end": 12043.5,
+    "type": "warzone-victory",
+    "triggerTime": 12041
+  },
+  {
+    "start": 12249.5,
+    "end": 12262,
+    "type": "warzone-death",
+    "triggerTime": 12259.5
+  },
+  {
+    "start": 12250,
+    "end": 12262.5,
+    "type": "warzone-death",
+    "triggerTime": 12260
+  },
+  {
+    "start": 12250.5,
+    "end": 12263,
+    "type": "warzone-death",
+    "triggerTime": 12260.5
+  },
+  {
+    "start": 12261,
+    "end": 12273.5,
+    "type": "warzone-death",
+    "triggerTime": 12271
+  },
+  {
+    "start": 12261.5,
+    "end": 12274,
+    "type": "warzone-death",
+    "triggerTime": 12271.5
+  },
+  {
+    "start": 12262,
+    "end": 12274.5,
+    "type": "warzone-death",
+    "triggerTime": 12272
+  },
+  {
+    "start": 12272,
+    "end": 12284.5,
+    "type": "warzone-death",
+    "triggerTime": 12282
+  },
+  {
+    "start": 12272.5,
+    "end": 12285,
+    "type": "warzone-death",
+    "triggerTime": 12282.5
+  },
+  {
+    "start": 12273,
+    "end": 12285.5,
+    "type": "warzone-death",
+    "triggerTime": 12283
+  },
+  {
+    "start": 12273.5,
+    "end": 12286,
+    "type": "warzone-death",
+    "triggerTime": 12283.5
+  },
+  {
+    "start": 12375.5,
+    "end": 12388,
+    "type": "warzone-kill",
+    "triggerTime": 12385.5
+  },
+  {
+    "start": 12504,
+    "end": 12516.5,
+    "type": "warzone-kill",
+    "triggerTime": 12514
+  },
+  {
+    "start": 13452.5,
+    "end": 13465,
+    "type": "warzone-death",
+    "triggerTime": 13462.5
+  },
+  {
+    "start": 13653,
+    "end": 13665.5,
+    "type": "warzone-death",
+    "triggerTime": 13663
+  },
+  {
+    "start": 13653.5,
+    "end": 13666,
+    "type": "warzone-death",
+    "triggerTime": 13663.5
+  },
+  {
+    "start": 13654,
+    "end": 13666.5,
+    "type": "warzone-death",
+    "triggerTime": 13664
+  },
+  {
+    "start": 13945,
+    "end": 13957.5,
+    "type": "warzone-death",
+    "triggerTime": 13955
+  },
+  {
+    "start": 13945.5,
+    "end": 13958,
+    "type": "warzone-death",
+    "triggerTime": 13955.5
+  },
+  {
+    "start": 13946,
+    "end": 13958.5,
+    "type": "warzone-death",
+    "triggerTime": 13956
+  },
+  {
+    "start": 13950.5,
+    "end": 13963,
+    "type": "warzone-death",
+    "triggerTime": 13960.5
+  },
+  {
+    "start": 13956,
+    "end": 13968.5,
+    "type": "warzone-death",
+    "triggerTime": 13966
+  },
+  {
+    "start": 13956.5,
+    "end": 13969,
+    "type": "warzone-death",
+    "triggerTime": 13966.5
+  },
+  {
+    "start": 13957,
+    "end": 13969.5,
+    "type": "warzone-death",
+    "triggerTime": 13967
+  },
+  {
+    "start": 13957.5,
+    "end": 13970,
+    "type": "warzone-death",
+    "triggerTime": 13967.5
+  },
+  {
+    "start": 13967.5,
+    "end": 13980,
+    "type": "warzone-death",
+    "triggerTime": 13977.5
+  },
+  {
+    "start": 13968,
+    "end": 13980.5,
+    "type": "warzone-death",
+    "triggerTime": 13978
+  },
+  {
+    "start": 13968.5,
+    "end": 13981,
+    "type": "warzone-death",
+    "triggerTime": 13978.5
+  },
+  {
+    "start": 14045,
+    "end": 14057.5,
+    "type": "warzone-death",
+    "triggerTime": 14055
+  },
+  {
+    "start": 14147,
+    "end": 14159.5,
+    "type": "warzone-death",
+    "triggerTime": 14157
+  },
+  {
+    "start": 14918,
+    "end": 14930.5,
+    "type": "warzone-kill",
+    "triggerTime": 14928
+  },
+  {
+    "start": 15071.5,
+    "end": 15084,
+    "type": "warzone-kill",
+    "triggerTime": 15081.5
+  },
+  {
+    "start": 15072,
+    "end": 15084.5,
+    "type": "warzone-kill",
+    "triggerTime": 15082
+  },
+  {
+    "start": 15072.5,
+    "end": 15085,
+    "type": "warzone-kill",
+    "triggerTime": 15082.5
+  },
+  {
+    "start": 15346,
+    "end": 15358.5,
+    "type": "warzone-kill",
+    "triggerTime": 15356
+  },
+  {
+    "start": 15346.5,
+    "end": 15359,
+    "type": "warzone-kill",
+    "triggerTime": 15356.5
+  },
+  {
+    "start": 15384,
+    "end": 15396.5,
+    "type": "warzone-death",
+    "triggerTime": 15394
+  },
+  {
+    "start": 15384.5,
+    "end": 15397,
+    "type": "warzone-death",
+    "triggerTime": 15394.5
+  },
+  {
+    "start": 15385,
+    "end": 15397.5,
+    "type": "warzone-death",
+    "triggerTime": 15395
+  },
+  {
+    "start": 15385.5,
+    "end": 15398,
+    "type": "warzone-death",
+    "triggerTime": 15395.5
+  },
+  {
+    "start": 15400.5,
+    "end": 15413,
+    "type": "warzone-death",
+    "triggerTime": 15410.5
+  },
+  {
+    "start": 16205.5,
+    "end": 16218,
+    "type": "warzone-kill",
+    "triggerTime": 16215.5
+  },
+  {
+    "start": 16253,
+    "end": 16265.5,
+    "type": "warzone-kill",
+    "triggerTime": 16263
+  },
+  {
+    "start": 16579,
+    "end": 16591.5,
+    "type": "warzone-kill",
+    "triggerTime": 16589
+  },
+  {
+    "start": 16579.5,
+    "end": 16592,
+    "type": "warzone-kill",
+    "triggerTime": 16589.5
+  },
+  {
+    "start": 16580.5,
+    "end": 16593,
+    "type": "warzone-kill",
+    "triggerTime": 16590.5
+  },
+  {
+    "start": 16588,
+    "end": 16600.5,
+    "type": "warzone-death",
+    "triggerTime": 16598
+  },
+  {
+    "start": 16588.5,
+    "end": 16601,
+    "type": "warzone-death",
+    "triggerTime": 16598.5
+  },
+  {
+    "start": 16589,
+    "end": 16601.5,
+    "type": "warzone-death",
+    "triggerTime": 16599
+  },
+  {
+    "start": 16589.5,
+    "end": 16602,
+    "type": "warzone-death",
+    "triggerTime": 16599.5
+  },
+  {
+    "start": 16983,
+    "end": 16995.5,
+    "type": "warzone-kill",
+    "triggerTime": 16993
+  },
+  {
+    "start": 16984,
+    "end": 16996.5,
+    "type": "warzone-kill",
+    "triggerTime": 16994
+  },
+  {
+    "start": 17061,
+    "end": 17078.5,
+    "type": "warzone-victory",
+    "triggerTime": 17076
+  },
+  {
+    "start": 17061.5,
+    "end": 17079,
+    "type": "warzone-victory",
+    "triggerTime": 17076.5
+  },
+  {
+    "start": 17062.5,
+    "end": 17080,
+    "type": "warzone-victory",
+    "triggerTime": 17077.5
+  },
+  {
+    "start": 17063.5,
+    "end": 17081,
+    "type": "warzone-victory",
+    "triggerTime": 17078.5
+  },
+  {
+    "start": 17064,
+    "end": 17081.5,
+    "type": "warzone-victory",
+    "triggerTime": 17079
+  },
+  {
+    "start": 17064.5,
+    "end": 17082,
+    "type": "warzone-victory",
+    "triggerTime": 17079.5
+  },
+  {
+    "start": 17065,
+    "end": 17082.5,
+    "type": "warzone-victory",
+    "triggerTime": 17080
+  },
+  {
+    "start": 17065.5,
+    "end": 17083,
+    "type": "warzone-victory",
+    "triggerTime": 17080.5
+  },
+  {
+    "start": 17066,
+    "end": 17083.5,
+    "type": "warzone-victory",
+    "triggerTime": 17081
+  },
+  {
+    "start": 17066.5,
+    "end": 17084,
+    "type": "warzone-victory",
+    "triggerTime": 17081.5
+  },
+  {
+    "start": 17067,
+    "end": 17084.5,
+    "type": "warzone-victory",
+    "triggerTime": 17082
+  },
+  {
+    "start": 17067.5,
+    "end": 17085,
+    "type": "warzone-victory",
+    "triggerTime": 17082.5
+  },
+  {
+    "start": 17293,
+    "end": 17305.5,
+    "type": "warzone-death",
+    "triggerTime": 17303
+  },
+  {
+    "start": 17293.5,
+    "end": 17306,
+    "type": "warzone-death",
+    "triggerTime": 17303.5
+  },
+  {
+    "start": 17294,
+    "end": 17306.5,
+    "type": "warzone-death",
+    "triggerTime": 17304
+  },
+  {
+    "start": 17704,
+    "end": 17716.5,
+    "type": "warzone-kill",
+    "triggerTime": 17714
+  },
+  {
+    "start": 17706,
+    "end": 17718.5,
+    "type": "warzone-kill",
+    "triggerTime": 17716
+  },
+  {
+    "start": 17722.5,
+    "end": 17735,
+    "type": "warzone-kill",
+    "triggerTime": 17732.5
+  },
+  {
+    "start": 17822,
+    "end": 17834.5,
+    "type": "warzone-kill",
+    "triggerTime": 17832
+  },
+  {
+    "start": 17822.5,
+    "end": 17835,
+    "type": "warzone-kill",
+    "triggerTime": 17832.5
+  },
+  {
+    "start": 18700,
+    "end": 18712.5,
+    "type": "warzone-kill",
+    "triggerTime": 18710
+  },
+  {
+    "start": 18700.5,
+    "end": 18713,
+    "type": "warzone-kill",
+    "triggerTime": 18710.5
+  },
+  {
+    "start": 18828.5,
+    "end": 18841,
+    "type": "warzone-death",
+    "triggerTime": 18838.5
+  },
+  {
+    "start": 18829,
+    "end": 18841.5,
+    "type": "warzone-death",
+    "triggerTime": 18839
+  },
+  {
+    "start": 18829.5,
+    "end": 18842,
+    "type": "warzone-death",
+    "triggerTime": 18839.5
+  },
+  {
+    "start": 18830,
+    "end": 18842.5,
+    "type": "warzone-death",
+    "triggerTime": 18840
+  },
+  {
+    "start": 18869.5,
+    "end": 18887,
+    "type": "warzone-victory",
+    "triggerTime": 18884.5
+  },
+  {
+    "start": 18870,
+    "end": 18887.5,
+    "type": "warzone-victory",
+    "triggerTime": 18885
+  },
+  {
+    "start": 18871,
+    "end": 18888.5,
+    "type": "warzone-victory",
+    "triggerTime": 18886
+  },
+  {
+    "start": 18871.5,
+    "end": 18889,
+    "type": "warzone-victory",
+    "triggerTime": 18886.5
+  },
+  {
+    "start": 18872,
+    "end": 18889.5,
+    "type": "warzone-victory",
+    "triggerTime": 18887
+  },
+  {
+    "start": 18872.5,
+    "end": 18890,
+    "type": "warzone-victory",
+    "triggerTime": 18887.5
+  },
+  {
+    "start": 18873,
+    "end": 18890.5,
+    "type": "warzone-victory",
+    "triggerTime": 18888
+  },
+  {
+    "start": 18873.5,
+    "end": 18891,
+    "type": "warzone-victory",
+    "triggerTime": 18888.5
+  },
+  {
+    "start": 18874,
+    "end": 18891.5,
+    "type": "warzone-victory",
+    "triggerTime": 18889
+  },
+  {
+    "start": 18874.5,
+    "end": 18892,
+    "type": "warzone-victory",
+    "triggerTime": 18889.5
+  },
+  {
+    "start": 18875.5,
+    "end": 18893,
+    "type": "warzone-victory",
+    "triggerTime": 18890.5
+  },
+  {
+    "start": 18876,
+    "end": 18893.5,
+    "type": "warzone-victory",
+    "triggerTime": 18891
+  },
+  {
+    "start": 19363,
+    "end": 19375.5,
+    "type": "warzone-kill",
+    "triggerTime": 19373
+  },
+  {
+    "start": 19522,
+    "end": 19534.5,
+    "type": "warzone-death",
+    "triggerTime": 19532
+  },
+  {
+    "start": 19522.5,
+    "end": 19535,
+    "type": "warzone-death",
+    "triggerTime": 19532.5
+  },
+  {
+    "start": 19568.5,
+    "end": 19581,
+    "type": "warzone-kill",
+    "triggerTime": 19578.5
+  },
+  {
+    "start": 19570.5,
+    "end": 19583,
+    "type": "warzone-kill",
+    "triggerTime": 19580.5
+  },
+  {
+    "start": 19874,
+    "end": 19886.5,
+    "type": "warzone-kill",
+    "triggerTime": 19884
+  },
+  {
+    "start": 20140.5,
+    "end": 20153,
+    "type": "warzone-death",
+    "triggerTime": 20150.5
+  },
+  {
+    "start": 20167.5,
+    "end": 20180,
+    "type": "warzone-death",
+    "triggerTime": 20177.5
+  },
+  {
+    "start": 20408.5,
+    "end": 20421,
+    "type": "warzone-death",
+    "triggerTime": 20418.5
+  },
+  {
+    "start": 20461,
+    "end": 20473.5,
+    "type": "warzone-kill",
+    "triggerTime": 20471
+  },
+  {
+    "start": 20768,
+    "end": 20780.5,
+    "type": "warzone-death",
+    "triggerTime": 20778
+  },
+  {
+    "start": 20768.5,
+    "end": 20781,
+    "type": "warzone-death",
+    "triggerTime": 20778.5
+  },
+  {
+    "start": 21758.5,
+    "end": 21771,
+    "type": "warzone-death",
+    "triggerTime": 21768.5
+  },
+  {
+    "start": 21759,
+    "end": 21771.5,
+    "type": "warzone-death",
+    "triggerTime": 21769
+  },
+  {
+    "start": 21759.5,
+    "end": 21772,
+    "type": "warzone-death",
+    "triggerTime": 21769.5
+  },
+  {
+    "start": 21760,
+    "end": 21772.5,
+    "type": "warzone-death",
+    "triggerTime": 21770
+  },
+  {
+    "start": 21845,
+    "end": 21857.5,
+    "type": "warzone-death",
+    "triggerTime": 21855
+  },
+  {
+    "start": 21948,
+    "end": 21960.5,
+    "type": "warzone-death",
+    "triggerTime": 21958
+  },
+  {
+    "start": 21948.5,
+    "end": 21961,
+    "type": "warzone-death",
+    "triggerTime": 21958.5
+  },
+  {
+    "start": 21949,
+    "end": 21961.5,
+    "type": "warzone-death",
+    "triggerTime": 21959
+  },
+  {
+    "start": 21949.5,
+    "end": 21962,
+    "type": "warzone-death",
+    "triggerTime": 21959.5
+  }
+]

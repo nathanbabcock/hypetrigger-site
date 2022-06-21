@@ -9,7 +9,6 @@ export default function DiscordWidget(
       src={`https://discord.com/widget?id=${DISCORD_SERVER_ID}&theme=dark`}
       width="350"
       height="500"
-      allowTransparency
       frameBorder="0"
       sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
       {...props}

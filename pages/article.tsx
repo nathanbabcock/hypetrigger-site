@@ -1,5 +1,3 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Layout from '../components/Layout'
 import { DISCORD_INVITE } from '../fetch/discord'
 import styles from '../styles/Article.module.scss'
