@@ -12,6 +12,8 @@ const DURATION = 7 * 60 * 60
 export default function Iron() {
   const clips: Omit<Clip, 'inputPath'>[] = []
   for (const clip of rawClips) {
+    if (clip.type === 'warzone-death') continue
+
     if (clips.length === 0) {
       clips.push(clip)
       continue
@@ -21,7 +23,10 @@ export default function Iron() {
       clip.type === 'warzone-victory'
     )
       continue
-    if (clips[clips.length - 1].triggerTime < clip.triggerTime - 1)
+    if (
+      clips[clips.length - 1].triggerTime < clip.triggerTime - 1 ||
+      clips[clips.length - 1].type !== clip.type
+    )
       clips.push(clip)
     else clips[clips.length - 1].triggerTime = clip.triggerTime
   }
@@ -57,7 +62,7 @@ export default function Iron() {
         <select onChange={event => setFilter(event.currentTarget.value)}>
           <option value="">All events</option>
           <option value="warzone-kill">Kills</option>
-          <option value="warzone-death">Deaths</option>
+          {/* <option value="warzone-death">Deaths</option> */}
           <option value="warzone-victory">Wins</option>
         </select>
       </label>
