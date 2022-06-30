@@ -85,7 +85,7 @@ function MainSection() {
 function VideoSection() {
   return (
     <section className={styles.video}>
-      <h2 id="tutorial">Tutorial</h2>
+      <h2 id="tutorial">Tutorial: Getting started</h2>
       <iframe
         width="800"
         height="450"
