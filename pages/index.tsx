@@ -49,53 +49,53 @@ export default function Home(props: InferredProps) {
   return (
     <Layout inject={<SearchLights />}>
       <div className={styles.container}>
-        <main className={styles.main}>
-          <div className={styles.topText}>
-            <h1>Automatic highlight clips</h1>
-            <p>
-              Clipping used to be as easy as pressing a button.{' '}
-              <strong>Now it's even easier.</strong>
-            </p>
-          </div>
-          <a href="/screenshots">
-            <img
-              className={clsx('screenshot', styles.screenshot)}
-              src="/screenshots/0.10.0.png"
-              alt="Screenshot of Hypetrigger v0.10.0"
-            />
-          </a>
-          <SocialButtons />
-          <h2>Lightning fast / GPU-accelerated / computer vision</h2>
-        </main>
-
+        <MainSection />
         <GamesSection {...props} />
-
-        {/* <section>
-          <h2>Intuitive UI, powerful AI</h2>
-          <ol>
-            <li>Put in gameplay videos</li>
-            <li>Each frame is analyzed for known triggers</li>
-            <li>Clips are generated at each event</li>
-          </ol>
-        </section> */}
-
-        {/* <section>
-          <h2>Lightning fast features</h2>
-        </section> */}
-
+        <VideoSection />
         <DownloadSection />
-
-        {/* <section>
-          <h2>Patch notes in your inbox</h2>
-          <p>
-            Stay up to date with the latest development. Weekly updates all
-            summer!
-          </p>
-          <input type="text" placeholder="tim@apple.com" />
-          <button>Send</button>
-        </section> */}
+        {/* <EmailSignupSection /> */}
       </div>
     </Layout>
+  )
+}
+
+function MainSection() {
+  return (
+    <main className={styles.main}>
+      <div className={styles.topText}>
+        <h1>Automatic highlight clips</h1>
+        <p>
+          Clipping used to be as easy as pressing a button.{' '}
+          <strong>Now it's even easier.</strong>
+        </p>
+      </div>
+      <a href="/screenshots">
+        <img
+          className={clsx('screenshot', styles.screenshot)}
+          src="/screenshots/0.10.0.png"
+          alt="Screenshot of Hypetrigger v0.10.0"
+        />
+      </a>
+      <SocialButtons />
+      <h2>Lightning fast / GPU-accelerated / computer vision</h2>
+    </main>
+  )
+}
+
+function VideoSection() {
+  return (
+    <section className={styles.video}>
+      <h2 id="tutorial">Tutorial</h2>
+      <iframe
+        width="800"
+        height="450"
+        src="https://www.youtube.com/embed/E_YLbu7cz4w"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </section>
   )
 }
 
@@ -150,5 +150,18 @@ function DownloadSection() {
         Last updated <code>{latest.pub_date}</code>
       </p>
     </>
+  )
+}
+
+function EmailSignupSection() {
+  return (
+    <section>
+      <h2>Patch notes in your inbox</h2>
+      <p>
+        Stay up to date with the latest development. Weekly updates all summer!
+      </p>
+      <input type="text" placeholder="tim@apple.com" />
+      <button>Send</button>
+    </section>
   )
 }

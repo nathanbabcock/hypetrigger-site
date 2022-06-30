@@ -93,3 +93,15 @@
   text-align: right;
   margin-bottom: var(--xl);
 }
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--lg) 0;
+
+  iframe {
+    box-shadow: var(--shadow);
+    border-radius: var(--xs);
+  }
+}
