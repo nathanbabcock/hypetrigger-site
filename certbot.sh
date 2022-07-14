@@ -1,3 +1,6 @@
+# TODO: Switching to `lego` and automate?
+# https://gist.github.com/ssalonen/9dc22594a37e90e81775c2600e6da0d2
+
 # pre-install: backup old certs
 sudo cp -f ~/hypetrigger-site/cert/fullchain.pem ~/hypetrigger-site/cert/fullchain-old.pem
 sudo cp -f ~/hypetrigger-site/cert/privkey.pem ~/hypetrigger-site/cert/privkey-old.pem
