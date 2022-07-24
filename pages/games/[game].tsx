@@ -1,7 +1,7 @@
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import type FilterFunction from '../../../hypetrigger/src/filters/FilterFunction'
 import type ThresholdFilter from '../../../hypetrigger/src/filters/ThresholdFilter'
-import type { RegexParser } from '../../../hypetrigger/src/lib/ParseFunction'
+import RegexParser from '../../../hypetrigger/src/parsers/RegexParser'
 import Background from '../../components/Background'
 import Layout from '../../components/Layout'
 import { getConfig, getConfigIds } from '../../fetch/game-configs'
@@ -94,74 +94,76 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
       <section>
         <h2 id="triggers">Triggers</h2>
         <div className={styles.triggers}>
-          {config.triggers?.map(trigger => (
-            <div className={styles.trigger} key={trigger.id}>
-              <div
-                className={styles.triggerDiagram}
-                title="The smaller green rectangle is the region of the screen captured by this trigger"
-              >
+          {config.triggers
+            ?.filter(t => !t.linkedTo)
+            .map(trigger => (
+              <div className={styles.trigger} key={trigger.id}>
                 <div
-                  className={styles.cropRegion}
-                  style={{
-                    width: `${trigger.cropFunction.width}%`,
-                    height: `${trigger.cropFunction.height}%`,
-                    left: `${trigger.cropFunction.x}%`,
-                    top: `${trigger.cropFunction.y}%`,
-                  }}
-                />
-              </div>
-              <div className={styles.triggerRight}>
-                <h3 className={styles.triggerHeading}>
-                  <span className={styles.triggerTitle}>{trigger.title}</span>
-                  <span className={styles.triggerId}>{trigger.id}</span>
-                </h3>
-                <p>
-                  <strong>Crop: </strong>
-                  <code>
-                    {Math.round((trigger.cropFunction.width / 100) * 1920)}x
-                    {Math.round((trigger.cropFunction.height / 100) * 1080)}
-                  </code>{' '}
-                  @{' '}
-                  <code>
-                    ({Math.round((trigger.cropFunction.x / 100) * 1920)},{' '}
-                    {Math.round((trigger.cropFunction.y / 100) * 1080)})
-                  </code>
-                </p>
-                <p>
-                  <strong>Filter: </strong>
-                  <code>
-                    {getFilterRGB(trigger.filters[0]) !== 'none' && (
-                      <span
-                        className={styles.swatch}
-                        style={{
-                          backgroundColor: getFilterRGB(trigger.filters[0]),
-                        }}
-                      />
-                    )}
-                    {getFilterRGB(trigger.filters[0])}
-                  </code>
-                </p>
+                  className={styles.triggerDiagram}
+                  title="The smaller green rectangle is the region of the screen captured by this trigger"
+                >
+                  <div
+                    className={styles.cropRegion}
+                    style={{
+                      width: `${trigger.cropFunction.width}%`,
+                      height: `${trigger.cropFunction.height}%`,
+                      left: `${trigger.cropFunction.x}%`,
+                      top: `${trigger.cropFunction.y}%`,
+                    }}
+                  />
+                </div>
+                <div className={styles.triggerRight}>
+                  <h3 className={styles.triggerHeading}>
+                    <span className={styles.triggerTitle}>{trigger.title}</span>
+                    <span className={styles.triggerId}>{trigger.id}</span>
+                  </h3>
+                  <p>
+                    <strong>Crop: </strong>
+                    <code>
+                      {Math.round((trigger.cropFunction.width / 100) * 1920)}x
+                      {Math.round((trigger.cropFunction.height / 100) * 1080)}
+                    </code>{' '}
+                    @{' '}
+                    <code>
+                      ({Math.round((trigger.cropFunction.x / 100) * 1920)},{' '}
+                      {Math.round((trigger.cropFunction.y / 100) * 1080)})
+                    </code>
+                  </p>
+                  <p>
+                    <strong>Filter: </strong>
+                    <code>
+                      {getFilterRGB(trigger.filters[0]) !== 'none' && (
+                        <span
+                          className={styles.swatch}
+                          style={{
+                            backgroundColor: getFilterRGB(trigger.filters[0]),
+                          }}
+                        />
+                      )}
+                      {getFilterRGB(trigger.filters[0])}
+                    </code>
+                  </p>
 
-                <p>
-                  <strong>Parse: </strong>
-                  <code>
-                    {trigger.parser?.type === 'regex'
-                      ? (trigger.parser as RegexParser).regex.toString()
-                      : 'none'}
-                  </code>
-                </p>
+                  <p>
+                    <strong>Parse: </strong>
+                    <code>
+                      {trigger.parser?.type === 'regex'
+                        ? (trigger.parser as RegexParser).regex.toString()
+                        : 'none'}
+                    </code>
+                  </p>
 
-                <p>
-                  <strong>Clip: </strong>
-                  <code>
-                    {trigger.secondsBefore + trigger.secondsAfter}
-                  </code>{' '}
-                  seconds (<code>{trigger.secondsBefore}s</code> before +{' '}
-                  <code>{trigger.secondsAfter}s</code> after)
-                </p>
+                  <p>
+                    <strong>Clip: </strong>
+                    <code>
+                      {trigger.secondsBefore + trigger.secondsAfter}
+                    </code>{' '}
+                    seconds (<code>{trigger.secondsBefore}s</code> before +{' '}
+                    <code>{trigger.secondsAfter}s</code> after)
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </section>
     </Layout>
