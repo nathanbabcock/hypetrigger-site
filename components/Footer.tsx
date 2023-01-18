@@ -70,7 +70,7 @@ export default function Footer() {
             <li>Social</li>
             <li>
               <a
-                href="https://github.com/nathanbabcock/hypetrigger-site"
+                href="https://github.com/nathanbabcock/hypetrigger"
                 target="blank"
               >
                 Github
