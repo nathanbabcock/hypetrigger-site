@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout'
 import formatTime from '../../util/formatTime'
 import rawClips from './its_iron.json'
-import type { Clip } from '../../../hypetrigger/src/stores/clips'
+import type { Clip } from '../../../hypetrigger-app/src/stores/clips'
 import { useState } from 'react'
 import styles from '../../styles/StreamSummary.module.scss'
 import clsx from 'clsx'

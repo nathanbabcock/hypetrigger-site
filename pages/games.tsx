@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 import { useState } from 'react'
-import { Config } from '../../hypetrigger/src/configs'
+import { Config } from '../../hypetrigger-app/src/configs'
 import Layout from '../components/Layout'
 import { DISCORD_INVITE } from '../fetch/discord'
 import { getConfig, getConfigIds } from '../fetch/game-configs'

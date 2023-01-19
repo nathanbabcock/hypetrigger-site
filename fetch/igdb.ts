@@ -1,5 +1,5 @@
 import { readCache, writeCache } from './cache'
-import type { Config } from 'hypetrigger/src/configs'
+import type { Config } from '../../hypetrigger-app/src/configs'
 import cleanConfigTitle from '../util/cleanConfigTitle'
 
 export const IGDB_CACHE_DIR = 'cache/igdb'
@@ -34,7 +34,7 @@ export async function fetchAccessToken(): Promise<TwitchBearerToken> {
     'client_secret': process.env.TWITCH_CLIENT_SECRET!,
     'grant_type': 'client_credentials',
   })
-  const url = `https://id.twitch.tv/oauth2/token?${params.toString()}`;
+  const url = `https://id.twitch.tv/oauth2/token?${params.toString()}`
   const response = await fetch(url, { method: 'POST' })
   const json = await response.json() as TwitchBearerToken
   json.generated_at = new Date().getTime()

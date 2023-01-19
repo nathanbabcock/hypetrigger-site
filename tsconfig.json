@@ -16,7 +16,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "hypetrigger/*": ["../hypetrigger/*"]
+      "hypetrigger-app/*": ["../hypetrigger-app/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

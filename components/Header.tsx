@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import type { ComponentProps } from 'react'
-import packageJSON from '../../hypetrigger/package.json'
+import packageJSON from '../../hypetrigger-app/package.json'
 import { DISCORD_INVITE } from '../fetch/discord'
 import styles from '../styles/Header.module.scss'
 
