@@ -10,8 +10,8 @@ sudo docker run -d \
   -v ~/hypetrigger-site/out/:/var/www/html/static/:ro \
   --name=${app} \
   --restart=always \
-  --log-opt max-size=100m \
-  --log-opt max-file=5 \
+  --log-opt max-size=10m \
+  --log-opt max-file=1 \
   --add-host dockerhost:$(ip route get 1.2.3.4 | awk '{print $7}') \
   nginx
 docker ps -a
