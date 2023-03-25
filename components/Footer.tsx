@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.wrapper}>
         <div className={styles.footerTop}>
           <span className={styles.copyright}>
-            &copy; {year} Nathan Babcock
+            &copy; {year} Hypetrigger LLC
             <br /> (
             <a
               href="https://www.linkedin.com/in/nathan-babcock/"
