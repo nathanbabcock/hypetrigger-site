@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import type { ComponentProps } from 'react'
-import packageJSON from '../../hypetrigger-app/package.json'
+import packageJSON from '../../the-monorepo/package.json'
 import styles from '../styles/Header.module.scss'
 
 export default function Header(props: ComponentProps<'header'>) {
@@ -9,7 +9,7 @@ export default function Header(props: ComponentProps<'header'>) {
       <a href="/" className={styles.homeLink}>
         <img className={styles.logo} src="/img/logo.svg" alt="" />
         <span className={styles.siteName}>Hypetrigger</span>
-        <span className={styles.version}>v{packageJSON.version}</span>
+        <span className={styles.version}>v{packageJSON.version} Beta</span>
       </a>
 
       <nav className={styles.nav}>
