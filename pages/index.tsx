@@ -6,6 +6,7 @@ import SocialButtons from '../components/SocialButtons'
 import { getConfig, getConfigIds } from '../fetch/game-configs'
 import { getGameInfo } from '../fetch/igdb'
 import { getCoverImg } from '../fetch/igdb-img'
+import beta from '../public/download/beta.json'
 import latest from '../public/download/latest.json'
 import styles from '../styles/Home.module.scss'
 import shuffle from '../util/shuffle'
@@ -142,8 +143,7 @@ function DownloadSection() {
             <li>Automatic updates</li>
             <li>Free</li>
           </ul>
-
-          <a
+          {/* <a
             href={latest.platforms['windows-x86_64'].url}
             className={styles.downloadBtn}
           >
@@ -154,7 +154,33 @@ function DownloadSection() {
                 <code>{latest.version}</code> for Windows
               </span>
             </div>
-          </a>
+          </a> */}
+          <div>
+            <a
+              href={beta.platforms['windows-x86_64'].url}
+              className={styles.downloadBtn}
+            >
+              <img src="/img/logo.svg" className={styles.downloadLogo} alt="" />
+              <div className={styles.downloadRight}>
+                <span className={styles.downloadLabel}>
+                  Download latest Beta
+                </span>
+                <span className={styles.downloadVersion}>
+                  <code>{beta.version}</code> Beta for Windows
+                </span>
+              </div>
+            </a>
+            <a
+              href={latest.platforms['windows-x86_64'].url}
+              className={styles.downloadStable}
+            >
+              Or download the latest stable release instead:{' '}
+              <strong>
+                <code>{latest.version}</code>
+              </strong>{' '}
+              for Windows
+            </a>
+          </div>
         </div>
       </section>
       <p className={styles.downloadNote}>

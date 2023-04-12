@@ -1,0 +1,10 @@
+{
+  "version": "v0.15.0",
+  "pub_date": "2023-02-03T19:41:18.250Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWxnV2tsN3JMaEEva1dFZ2dvT1VkV21PZVJneklTckxYTFNUZU9ud25xbmZSaGFNREZLdE5Tbnp6dVdvakUzK0FtNjJva1pHVm5ZZ2trcnJrbTZNSDN2bTRIaUVHTkF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgxMTcxMTg3CWZpbGU6SHlwZXRyaWdnZXIgQmV0YV8wLjE1LjBfeDY0X2VuLVVTLm1zaS56aXAKZHFNY21xZzRyVmZIRkVodWthSVdOVDZXRzdsZWxDZmhacmdOQ0tjYmE4Sk5TOStzN01KY3hBbDI0aUZ3dFNwZHB4OUxnWjZFeFd3SGJNMVU2YWpRQUE9PQo=",
+      "url": "https://hypetrigger-downloads.s3.amazonaws.com/Hypetrigger%20Beta_0.15.0_x64_en-US.msi.zip"
+    }
+  }
+}

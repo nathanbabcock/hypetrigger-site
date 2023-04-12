@@ -94,6 +94,12 @@
   margin-bottom: var(--xl);
 }
 
+.downloadStable {
+  display: block;
+  margin: var(--md);
+  text-decoration: none;
+}
+
 .video {
   display: flex;
   flex-direction: column;
