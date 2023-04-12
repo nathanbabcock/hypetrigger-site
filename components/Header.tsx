@@ -35,8 +35,11 @@ export default function Header(props: ComponentProps<'header'>) {
         </ul>
       </nav>
 
-      <a href="/#download" className="btn-lg">
+      {/* <a href="/#download" className="btn-lg">
         Free Download
+      </a> */}
+      <a href="/app" className="btn-lg">
+        Try Online
       </a>
     </header>
   )
