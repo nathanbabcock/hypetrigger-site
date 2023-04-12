@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import type { ComponentProps } from 'react'
 import packageJSON from '../../hypetrigger-app/package.json'
-import { DISCORD_INVITE } from '../fetch/discord'
 import styles from '../styles/Header.module.scss'
 
 export default function Header(props: ComponentProps<'header'>) {
@@ -37,7 +36,7 @@ export default function Header(props: ComponentProps<'header'>) {
       </nav>
 
       <a href="/#download" className="btn-lg">
-        Download for free
+        Free Download
       </a>
     </header>
   )

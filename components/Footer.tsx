@@ -24,7 +24,7 @@ export default function Footer() {
             )
           </span>
           <a className="btn-lg" href="/#download">
-            Download
+            Free Download
           </a>
         </div>
 

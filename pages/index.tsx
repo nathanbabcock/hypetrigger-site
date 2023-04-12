@@ -6,9 +6,9 @@ import SocialButtons from '../components/SocialButtons'
 import { getConfig, getConfigIds } from '../fetch/game-configs'
 import { getGameInfo } from '../fetch/igdb'
 import { getCoverImg } from '../fetch/igdb-img'
+import latest from '../public/download/latest.json'
 import styles from '../styles/Home.module.scss'
 import shuffle from '../util/shuffle'
-import latest from '../public/download/latest.json'
 
 type FeaturedGame = {
   name: string
@@ -63,11 +63,22 @@ function MainSection() {
   return (
     <main className={styles.main}>
       <div className={styles.topText}>
-        <h1>Automatic highlight clips</h1>
+        <h1>
+          Record automatic highlight clips <u>from your browser</u>
+        </h1>
+        <p>
+          No download necessary, starting in <code>v0.15</code> Beta. Features
+          include <b>Screen Capture</b>, <b>Autoclip</b>, and{' '}
+          <b>Replay Buffer</b>.
+        </p>
+        <p>
+          👉 <a href="/app">Check it out</a> 👈
+        </p>
+        {/* <h1>Automatic highlight clips</h1>
         <p>
           Clipping used to be as easy as pressing a button.{' '}
           <strong>Now it's even easier.</strong>
-        </p>
+        </p> */}
       </div>
       <a href="/screenshots">
         <img
