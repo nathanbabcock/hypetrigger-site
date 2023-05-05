@@ -1,10 +1,10 @@
 {
-  "version": "v0.15.2",
-  "pub_date": "2023-04-19T23:27:10.294Z",
+  "version": "v0.15.3",
+  "pub_date": "2023-05-05T22:13:07.318Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWxnV2tsN3JMaE9pMXQxQ2dXdW40WGpIamc3SmFkbGMxR255TkRETEFPWEo0Qi9SY2tzRGdQWXF4L0JhSzNsa0k5eE5nS2QydkljRDNOS0N0ZGRhY2RpTzM1eWtmTGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgxOTQ2MzczCWZpbGU6SHlwZXRyaWdnZXIgQmV0YV8wLjE1LjJfeDY0X2VuLVVTLm1zaS56aXAKRzlmLzE0SHdCRW8xYkxEUjF5QTYzaEJ2alJBdUNJS3BDV0dQSUJ2bFpWUzhMR01LSU5zZldUbktSK2dMcmhkZ1lVanByV2laY1BRc1Axa00ydzg4QWc9PQo=",
-      "url": "https://hypetrigger-downloads.s3.amazonaws.com/Hypetrigger Beta_0.15.2_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWxnV2tsN3JMaENjaEc2QTB0c0xGZ2tXUHZRRHd5M2VIRWZrc29jcEhaeE9VbjVSZjJweGpnTjZmUHpWME1qMGdldVBxK21aM0V0RzRvOHM2eDlJVTFkRWc5T0thTVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgzMzI0NTAwCWZpbGU6SHlwZXRyaWdnZXIgQmV0YV8wLjE1LjNfeDY0X2VuLVVTLm1zaS56aXAKUTJ6eVZEZm9XMkJwbGFqYk9OTnpPempWL3M4QVg5Ti9VdWNVcU1yNXRNejhtTDNwWUk5Wkthd1BtWkY4N0V5dWlIdWZtdUpJWmRxWm5qSURrOGNNQ3c9PQo=",
+      "url": "https://hypetrigger-downloads.s3.amazonaws.com/Hypetrigger Beta_0.15.3_x64_en-US.msi.zip"
     }
   }
 }
