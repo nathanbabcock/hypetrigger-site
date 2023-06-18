@@ -51,7 +51,7 @@
 
 .downloadWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -67,6 +67,10 @@
   text-decoration: none;
   justify-content: center;
   align-items: center;
+
+  &.downloadSecondary {
+    background: #6b26ff43;
+  }
 }
 
 .downloadLogo {

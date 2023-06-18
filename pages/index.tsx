@@ -135,56 +135,56 @@ function DownloadSection() {
   return (
     <>
       <section id="download" className={styles.downloadSection}>
-        <h2>Free download for Windows</h2>
+        <h2>Download Hypetrigger for Windows and Linux</h2>
         <div className={styles.downloadWrapper}>
-          <ul>
-            <li>Compatible with Windows 7, 8, 10, and 11 (64-bit)</li>
-            <li>&#x2248; 400MB installer</li>
-            <li>Automatic updates</li>
-            <li>Free</li>
-          </ul>
-          {/* <a
+          <a
             href={latest.platforms['windows-x86_64'].url}
-            className={styles.downloadBtn}
+            className={`${styles.downloadBtn} ${styles.downloadSecondary}`}
           >
-            <img src="/img/logo.svg" className={styles.downloadLogo} alt="" />
             <div className={styles.downloadRight}>
-              <span className={styles.downloadLabel}>Download Hypetrigger</span>
+              <span className={styles.downloadLabel}>Windows Stable</span>
               <span className={styles.downloadVersion}>
                 <code>{latest.version}</code> for Windows
               </span>
             </div>
+          </a>
+          <a
+            href={beta.platforms['windows-x86_64'].url}
+            className={styles.downloadBtn}
+          >
+            <img src="/img/logo.svg" className={styles.downloadLogo} alt="" />
+            <div className={styles.downloadRight}>
+              <span className={styles.downloadLabel}>Windows Beta</span>
+              <span className={styles.downloadVersion}>
+                <code>{beta.version}</code> Beta for Windows
+              </span>
+            </div>
+          </a>
+          {/* <a
+            href={latest.platforms['windows-x86_64'].url}
+            className={styles.downloadStable}
+          >
+            Or download the latest stable release instead:{' '}
+            <strong>
+              <code>{latest.version}</code>
+            </strong>{' '}
+            for Windows
           </a> */}
-          <div>
-            <a
-              href={beta.platforms['windows-x86_64'].url}
-              className={styles.downloadBtn}
-            >
-              <img src="/img/logo.svg" className={styles.downloadLogo} alt="" />
-              <div className={styles.downloadRight}>
-                <span className={styles.downloadLabel}>
-                  Download latest Beta
-                </span>
-                <span className={styles.downloadVersion}>
-                  <code>{beta.version}</code> Beta for Windows
-                </span>
-              </div>
-            </a>
-            <a
-              href={latest.platforms['windows-x86_64'].url}
-              className={styles.downloadStable}
-            >
-              Or download the latest stable release instead:{' '}
-              <strong>
-                <code>{latest.version}</code>
-              </strong>{' '}
-              for Windows
-            </a>
-          </div>
+          <a
+            href="https://hypetrigger-downloads.s3.amazonaws.com/hypetrigger-beta_0.15.9_amd64.AppImage"
+            className={`${styles.downloadBtn} ${styles.downloadSecondary}`}
+          >
+            <div className={styles.downloadRight}>
+              <span className={styles.downloadLabel}>Linux Beta</span>
+              <span className={styles.downloadVersion}>
+                <code>0.15.9</code> Beta for Linux
+              </span>
+            </div>
+          </a>
         </div>
       </section>
       <p className={styles.downloadNote}>
-        Last updated <code>{latest.pub_date}</code>
+        Last updated <code>{beta.pub_date}</code>
       </p>
     </>
   )
