@@ -4,9 +4,9 @@
 
 ## Placement
 
-Root folder must be adjacent to the `hypetrigger` private repository.
+Root folder must be adjacent to the `hypetrigger-monorepo` private repository.
 
-Configs and other resources are read directly from the `hypetrigger` source files.
+Configs and other resources are read directly from the `hypetrigger-monorepo` source files.
 
 ## Deployment
 

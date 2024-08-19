@@ -43,7 +43,7 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
   return (
     <Layout
       inject={
-        <Background src={getFullImg(gameInfo?.screenshots[0]?.image_id)} />
+        <Background src={getFullImg(gameInfo?.screenshots?.[0]?.image_id)} />
       }
     >
       <div className={styles.gameInfo}>
@@ -132,15 +132,15 @@ export default function GamePage({ config, gameInfo }: InferredProps) {
                   <p>
                     <strong>Filter: </strong>
                     <code>
-                      {getFilterRGB(trigger.filters[0]) !== 'none' && (
+                      {getFilterRGB(trigger.filters?.[0]) !== 'none' && (
                         <span
                           className={styles.swatch}
                           style={{
-                            backgroundColor: getFilterRGB(trigger.filters[0]),
+                            backgroundColor: getFilterRGB(trigger.filters?.[0]),
                           }}
                         />
                       )}
-                      {getFilterRGB(trigger.filters[0])}
+                      {getFilterRGB(trigger.filters?.[0])}
                     </code>
                   </p>
 

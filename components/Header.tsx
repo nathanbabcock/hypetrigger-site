@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import type { ComponentProps } from 'react'
-import packageJSON from '../../the-monorepo/package.json'
+import packageJSON from '../../hypetrigger-monorepo/package.json'
 import styles from '../styles/Header.module.scss'
 
 export default function Header(props: ComponentProps<'header'>) {
